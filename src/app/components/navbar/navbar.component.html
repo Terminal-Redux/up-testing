@@ -1,0 +1,50 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white text-light" [containerInside]="false">
+
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <mdb-navbar-brand><a class="navbar-brand" href="#">Geoportal - Urban Performance</a></mdb-navbar-brand>
+
+        <!-- Collapsible content -->
+        <links>
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link waves-light text-muted" mdbWavesEffect>
+                        <mdb-icon fas icon="database"></mdb-icon> My Data<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light text-muted" mdbWavesEffect>
+                        <mdb-icon fas icon="university"></mdb-icon> Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light text-dark" mdbWavesEffect>
+                        <mdb-icon fas icon="user-times"></mdb-icon> Logout</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                        <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
+                    <div class="dropdown-menu" role="menu">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><img src="assets/img/logo1.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                            </li>
+                            <li class="list-inline-item"><img src="assets/img/logo2.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><img src="assets/img/logo3.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></li>
+                            <li class="list-inline-item"><img src="assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- Links -->
+        </links>
+        <!-- Collapsible content -->
+
+    </div>
+</mdb-navbar>
+<!--/.Navbar-->

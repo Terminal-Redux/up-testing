@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&display=swap');
+$main-font: 'Titillium Web',
+sans-serif;
+$geo-teal: #43D9B7;
+$geo-orange: #FF8680;
+$geo-blue: #2568D8;
+$geo-green: #7DB952;
+$geo-modal-input: #414B54;
+$geo-modal-input-txt: #D8DEE3;
+$black: #343E46;
+$black2: #414B54;
+$grey-blue: #6C8090;
+$grey: #B7C2CB;
+$grey2: #DADFE3;
+$grey3: #A5ADB4;
+$grey4: #D8DEE3;
+$grey5: #CAD9E0;
+$grey6: #F4F6F7;
+$grey7: #ECF0F2;
+
+#layer-col,
+#tools-col {
+    font-size: .9em;
+    padding-top: 1.5%;
+    background-color: $black;
+    color: #CCCFD1;
+}
+$grey7: #ECF0F2;

@@ -1,0 +1,2801 @@
+[
+    {
+        "scenario_id": 1,
+        "name": "Escenario1",
+        "results": [
+            {
+                "name": "ww",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "local_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "localren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "inv_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwtrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwt_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "energy_wwt",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "borrowed_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "indirect_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "city_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solidw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cwrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "plrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_security",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "other_land_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "greenland_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "agric_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "emissions_transport",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "roads_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pspace_capita",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nrisk_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_seq_nr",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm10kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cokwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "noxkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm2_5kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "so2kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cotkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "covkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "avge_cycle_track",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_sequestration",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tree_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "street_coef",
+                "value": 1.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_market_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_cultural_facility_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_space_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_nursery_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_health_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_university_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_worship_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_sports_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_service_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_high_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_secondary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_elementary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_transit_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_job_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_intersection_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "base_vacant_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_revenue_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_expenditure",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs_consolidation",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermitted_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km2",
+                "value": 4.17912939,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km",
+                "value": 1251.9,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km2",
+                "value": 1.439544666,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km",
+                "value": 431.23,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km2",
+                "value": 0.656496194,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km",
+                "value": 196.66,
+				"units": "xxxx"
+            },
+            {
+                "name": "financial_balance",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "additional_annual_municipal_revenues",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solid_waste_annual_collection_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "water_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "lighting_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pedestrian_crossing_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "sidewalks_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "intersections_density",
+                "value": 43.77409583,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermittd_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "house_deficit",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "overcrowding",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_expan",
+                "value": 293676.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_infill",
+                "value": 413289.8555,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_hazards",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_market",
+                "value": 110823.7919,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cultural_facility",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_space",
+                "value": 1194833.637,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_nursery",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_health",
+                "value": 1811206.626,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_university",
+                "value": 2156870.513,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_worship",
+                "value": 1215382.342,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_sports",
+                "value": 1518078.142,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_service",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_high_school",
+                "value": 1758591.844,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_secondary_school",
+                "value": 853610.2748,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_elementary_school",
+                "value": 1489829.53,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_school",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_transit",
+                "value": 1274994.635,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_jobs",
+                "value": 1696219.17,
+				"units": "xxxx"
+            },
+            {
+                "name": "collection_energy",
+                "value": 22372449.98,
+				"units": "xxxx"
+            },
+            {
+                "name": "transport_energy",
+                "value": 393109472.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_diesel",
+                "value": 644.3298109,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_gasoline",
+                "value": 4852.223723,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_pct",
+                "value": 0.1,
+				"units": "%"
+            },
+            {
+                "name": "vhu_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "vhu_tot",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_tot",
+                "value": 828871.061,
+				"units": "xxxx"
+            },
+            {
+                "name": "hazard_exp",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "market_proximity",
+                "value": 0.041782657,
+				"units": "xxxx"
+            },
+            {
+                "name": "cultural_facility_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_service_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nursery_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "health_proximity",
+                "value": 0.682859008,
+				"units": "xxxx"
+            },
+            {
+                "name": "university_proximity",
+                "value": 0.813180803,
+				"units": "xxxx"
+            },
+            {
+                "name": "worship_proximity",
+                "value": 0.458222032,
+				"units": "xxxx"
+            },
+            {
+                "name": "sports_proximity",
+                "value": 0.572344049,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_space_proximity",
+                "value": 0.450474783,
+				"units": "xxxx"
+            },
+            {
+                "name": "high_school_proximity",
+                "value": 0.663022244,
+				"units": "xxxx"
+            },
+            {
+                "name": "secondary_school_proximity",
+                "value": 0.321827149,
+				"units": "xxxx"
+            },
+            {
+                "name": "elementary_school_proximity",
+                "value": 0.56169379,
+				"units": "xxxx"
+            },
+            {
+                "name": "school_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "transit_prox",
+                "value": 0.480696989,
+				"units": "xxxx"
+            },
+            {
+                "name": "job_prox",
+                "value": 0.639506571,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_infill_costs",
+                "value": 475541000000.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_new_costs",
+                "value": 388785000000.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs",
+                "value": 864326.3523,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_service_costs",
+                "value": 640336.6089,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_buildings",
+                "value": 1243.65,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_swaste",
+                "value": 156.6445093,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_transport",
+                "value": 5496.553534,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_water",
+                "value": 12.9249601,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_lighting",
+                "value": 21.42113796,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_water",
+                "value": 56.9451425,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_consumption",
+                "value": 6931.194141,
+				"units": "xxxx"
+            },
+            {
+                "name": "ghg_emissions",
+                "value": 2528.395641,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_density",
+                "value": 8019.311853,
+				"units": "xxxx"
+            },
+            {
+                "name": "infill_area_km2",
+                "value": 45.75,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_km",
+                "value": 31.19,
+				"units": "xxxx"
+            },
+            {
+                "name": "footprint_km2",
+                "value": 330.75,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_total",
+                "value": 2652387.395,
+				"units": "xxxx"
+            }
+        ]
+    },
+    {
+        "scenario_id": 2,
+        "name": "Escenario2",
+        "results": [
+            {
+                "name": "ww",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "local_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "localren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "inv_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwtrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwt_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "energy_wwt",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "borrowed_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "indirect_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "city_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solidw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cwrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "plrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_security",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "other_land_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "greenland_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "agric_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "emissions_transport",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "roads_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pspace_capita",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nrisk_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_seq_nr",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm10kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cokwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "noxkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm2_5kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "so2kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cotkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "covkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "avge_cycle_track",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_sequestration",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tree_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "street_coef",
+                "value": 1.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_market_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_cultural_facility_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_space_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_nursery_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_health_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_university_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_worship_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_sports_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_service_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_high_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_secondary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_elementary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_transit_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_job_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_intersection_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "base_vacant_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_revenue_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_expenditure",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs_consolidation",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermitted_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km2",
+                "value": 4.17912939,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km",
+                "value": 1251.9,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km2",
+                "value": 1.439544666,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km",
+                "value": 431.23,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km2",
+                "value": 0.656496194,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km",
+                "value": 196.66,
+				"units": "xxxx"
+            },
+            {
+                "name": "financial_balance",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "additional_annual_municipal_revenues",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solid_waste_annual_collection_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "water_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "lighting_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pedestrian_crossing_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "sidewalks_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "intersections_density",
+                "value": 44.74562692,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermittd_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "house_deficit",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "overcrowding",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_expan",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_infill",
+                "value": 341322.1986,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_hazards",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_market",
+                "value": 137696.0103,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cultural_facility",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_space",
+                "value": 1484483.954,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_nursery",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_health",
+                "value": 2058717.342,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_university",
+                "value": 2339086.827,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_worship",
+                "value": 1553158.256,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_sports",
+                "value": 1777251.673,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_service",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_high_school",
+                "value": 2052404.802,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_secondary_school",
+                "value": 1067050.848,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_elementary_school",
+                "value": 1817820.691,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_school",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_transit",
+                "value": 1422023.608,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_jobs",
+                "value": 2090535.65,
+				"units": "xxxx"
+            },
+            {
+                "name": "collection_energy",
+                "value": 20262709.35,
+				"units": "xxxx"
+            },
+            {
+                "name": "transport_energy",
+                "value": 393304092.8,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_diesel",
+                "value": 618.7992841,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_gasoline",
+                "value": 4659.962205,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "vhu_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "vhu_tot",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_tot",
+                "value": 829281.4189,
+				"units": "xxxx"
+            },
+            {
+                "name": "hazard_exp",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "market_proximity",
+                "value": 0.0518883,
+				"units": "xxxx"
+            },
+            {
+                "name": "cultural_facility_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_service_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nursery_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "health_proximity",
+                "value": 0.77579113,
+				"units": "xxxx"
+            },
+            {
+                "name": "university_proximity",
+                "value": 0.8814434,
+				"units": "xxxx"
+            },
+            {
+                "name": "worship_proximity",
+                "value": 0.585280152,
+				"units": "xxxx"
+            },
+            {
+                "name": "sports_proximity",
+                "value": 0.669725783,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_space_proximity",
+                "value": 0.559401459,
+				"units": "xxxx"
+            },
+            {
+                "name": "high_school_proximity",
+                "value": 0.773412361,
+				"units": "xxxx"
+            },
+            {
+                "name": "secondary_school_proximity",
+                "value": 0.402099194,
+				"units": "xxxx"
+            },
+            {
+                "name": "elementary_school_proximity",
+                "value": 0.685013498,
+				"units": "xxxx"
+            },
+            {
+                "name": "school_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "transit_prox",
+                "value": 0.535864385,
+				"units": "xxxx"
+            },
+            {
+                "name": "job_prox",
+                "value": 0.787781295,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_infill_costs",
+                "value": 224778000000.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_new_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs",
+                "value": 224777.7967,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_service_costs",
+                "value": 587169.8542,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_buildings",
+                "value": 1243.65,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_swaste",
+                "value": 155.8453171,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_transport",
+                "value": 5278.761489,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_water",
+                "value": 11.85247051,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_lighting",
+                "value": 19.39150649,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_water",
+                "value": 52.71993546,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_consumption",
+                "value": 6709.500783,
+				"units": "xxxx"
+            },
+            {
+                "name": "ghg_emissions",
+                "value": 2470.553414,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_density",
+                "value": 8858.661172,
+				"units": "xxxx"
+            },
+            {
+                "name": "infill_area_km2",
+                "value": 21.625,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_km",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "footprint_km2",
+                "value": 299.56,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_total",
+                "value": 2653700.541,
+				"units": "xxxx"
+            }
+        ]
+    },
+    {
+        "scenario_id": 3,
+        "name": "Escenario3",
+        "results": [
+            {
+                "name": "ww",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "local_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "localren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "inv_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwtrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwt_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "energy_wwt",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "borrowed_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "indirect_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "city_data",
+                "value": 100.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solidw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cwrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "plrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_security",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "other_land_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "greenland_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "agric_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "emissions_transport",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "roads_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pspace_capita",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nrisk_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_seq_nr",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm10kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cokwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "noxkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm2_5kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "so2kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cotkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "covkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "avge_cycle_track",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_sequestration",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tree_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "street_coef",
+                "value": 1.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_market_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_cultural_facility_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_space_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_nursery_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_health_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_university_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_worship_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_sports_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_service_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_high_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_secondary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_elementary_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_transit_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_job_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_intersection_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "base_vacant_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_revenue_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_expenditure",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs_consolidation",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermitted_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km2",
+                "value": 4.17912939,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km",
+                "value": 1251.9,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km2",
+                "value": 1.439544666,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km",
+                "value": 431.23,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km2",
+                "value": 0.656496194,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km",
+                "value": 196.66,
+				"units": "xxxx"
+            },
+            {
+                "name": "financial_balance",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "additional_annual_municipal_revenues",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solid_waste_annual_collection_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "water_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "lighting_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pedestrian_crossing_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "sidewalks_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "intersections_density",
+                "value": 44.74562692,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermittd_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "house_deficit",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "overcrowding",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_expan",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_infill",
+                "value": 342027.0895,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_hazards",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_market",
+                "value": 139292.4094,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cultural_facility",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_space",
+                "value": 1497113.425,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_nursery",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_health",
+                "value": 2099181.081,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_university",
+                "value": 2328609.776,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_worship",
+                "value": 1546619.284,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_sports",
+                "value": 1820723.084,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_service",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_high_school",
+                "value": 2048828.332,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_secondary_school",
+                "value": 1102271.599,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_elementary_school",
+                "value": 1817022.617,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_school",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_transit",
+                "value": 1414114.777,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_jobs",
+                "value": 2073557.555,
+				"units": "xxxx"
+            },
+            {
+                "name": "collection_energy",
+                "value": 20262709.35,
+				"units": "xxxx"
+            },
+            {
+                "name": "transport_energy",
+                "value": 393408564.5,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_diesel",
+                "value": 556.9378348,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_gasoline",
+                "value": 4194.105144,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "vhu_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "vhu_tot",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_tot",
+                "value": 829501.6973,
+				"units": "xxxx"
+            },
+            {
+                "name": "hazard_exp",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "market_proximity",
+                "value": 0.052475936,
+				"units": "xxxx"
+            },
+            {
+                "name": "cultural_facility_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_service_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nursery_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "health_proximity",
+                "value": 0.790829109,
+				"units": "xxxx"
+            },
+            {
+                "name": "university_proximity",
+                "value": 0.877262286,
+				"units": "xxxx"
+            },
+            {
+                "name": "worship_proximity",
+                "value": 0.582661287,
+				"units": "xxxx"
+            },
+            {
+                "name": "sports_proximity",
+                "value": 0.685925014,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_space_proximity",
+                "value": 0.564010835,
+				"units": "xxxx"
+            },
+            {
+                "name": "high_school_proximity",
+                "value": 0.771859607,
+				"units": "xxxx"
+            },
+            {
+                "name": "secondary_school_proximity",
+                "value": 0.415261205,
+				"units": "xxxx"
+            },
+            {
+                "name": "elementary_school_proximity",
+                "value": 0.684530929,
+				"units": "xxxx"
+            },
+            {
+                "name": "school_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "transit_prox",
+                "value": 0.532742572,
+				"units": "xxxx"
+            },
+            {
+                "name": "job_prox",
+                "value": 0.781175901,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_infill_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_new_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_service_costs",
+                "value": 588042.6884,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_buildings",
+                "value": 1243.65,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_swaste",
+                "value": 155.8432894,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_transport",
+                "value": 4751.042979,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_water",
+                "value": 12.40041995,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_lighting",
+                "value": 19.38635697,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_water",
+                "value": 56.94514251,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_consumption",
+                "value": 6182.323045,
+				"units": "xxxx"
+            },
+            {
+                "name": "ghg_emissions",
+                "value": 2337.852818,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_density",
+                "value": 8861.014259,
+				"units": "xxxx"
+            },
+            {
+                "name": "infill_area_km2",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_km",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "footprint_km2",
+                "value": 299.56,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_total",
+                "value": 2654405.432,
+				"units": "xxxx"
+            }
+        ]
+    },
+    {
+        "scenario_id": 4,
+        "name": "Escenario4",
+        "results": [
+            {
+                "name": "ww",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "local_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "localren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "inv_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwtrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "wwt_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "energy_wwt",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "borrowed_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "indirect_data",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "city_data",
+                "value": 100.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solidw_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cwrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "plrunning_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ren_energy",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_security",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "other_land_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "greenland_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "agric_consumption",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "emissions_transport",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "roads_density",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pspace_capita",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "nrisk_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_seq_nr",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm10kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cokwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "noxkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pm2_5kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "so2kwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cotkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "covkwh",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "avge_cycle_track",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "cycle_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_cycle",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "carbon_sequestration",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "tree_cover",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "street_coef",
+                "value": 1.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_market_prox",
+                "value": 0.01218089,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_cultural_facility_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_space_prox",
+                "value": 0.337441802,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_nursery_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_health_prox",
+                "value": 0.673041888,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_university_prox",
+                "value": 0.849171795,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_worship_prox",
+                "value": 0.429659029,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_sports_prox",
+                "value": 0.596273173,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_public_service_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_high_school_prox",
+                "value": 0.667299905,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_secondary_school_prox",
+                "value": 0.232639942,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_elementary_school_prox",
+                "value": 0.506823431,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_school_prox",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_transit_prox",
+                "value": 0.455045118,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_job_prox",
+                "value": 0.757456578,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_intersection_density",
+                "value": 34.44316115,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop_density",
+                "value": 5781.1663,
+				"units": "xxxx"
+            },
+            {
+                "name": "d_pop",
+                "value": 261504.9489,
+				"units": "xxxx"
+            },
+            {
+                "name": "base_vacant_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_revenue_pop",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_expenditure",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs_consolidation",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_cost",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km2",
+                "value": 4.17912939,
+				"units": "xxxx"
+            },
+            {
+                "name": "ter_road_km",
+                "value": 1251.9,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km2",
+                "value": 1.439544666,
+				"units": "xxxx"
+            },
+            {
+                "name": "sec_road_km",
+                "value": 431.23,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km2",
+                "value": 0.656496194,
+				"units": "xxxx"
+            },
+            {
+                "name": "prim_road_km",
+                "value": 196.66,
+				"units": "xxxx"
+            },
+            {
+                "name": "financial_balance",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "additional_annual_municipal_revenues",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "solid_waste_annual_collection_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "water_metering",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "lighting_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pedestrian_crossing_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "sidewalks_coverage",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "intersections_density",
+                "value": 44.74562692,
+				"units": "xxxx"
+            },
+            {
+                "name": "unpermittd_housing",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "house_deficit",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "overcrowding",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_expan",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_infill",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_hazards",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_market",
+                "value": 119639.3774,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_public_space",
+                "value": 1248300.858,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_nursery",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_health",
+                "value": 1696904.48,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_university",
+                "value": 1997764.629,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_worship",
+                "value": 1297891.612,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_sports",
+                "value": 1534645.284,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_high_school",
+                "value": 1743974.85,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_secondary_school",
+                "value": 912316.2219,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_elementary_school",
+                "value": 1523862.825,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_school",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_transit",
+                "value": 1172719.917,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_prox_jobs",
+                "value": 1759827.574,
+				"units": "xxxx"
+            },
+            {
+                "name": "collection_energy",
+                "value": 20262709.35,
+				"units": "xxxx"
+            },
+            {
+                "name": "transport_energy",
+                "value": 342716840.9,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_diesel",
+                "value": 614.7125907,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_gasoline",
+                "value": 4629.186738,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_pct",
+                "value": 0.0,
+				"units": "%"
+            },
+            {
+                "name": "vhu_rate",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "vhu_tot",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "hu_tot",
+                "value": 722618.2318,
+				"units": "xxxx"
+            },
+            {
+                "name": "hazard_exp",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "market_proximity",
+                "value": 0.051738669,
+				"units": "xxxx"
+            },
+            {
+                "name": "nursery_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "health_proximity",
+                "value": 0.733835138,
+				"units": "xxxx"
+            },
+            {
+                "name": "university_proximity",
+                "value": 0.863943669,
+				"units": "xxxx"
+            },
+            {
+                "name": "worship_proximity",
+                "value": 0.561279955,
+				"units": "xxxx"
+            },
+            {
+                "name": "sports_proximity",
+                "value": 0.663665308,
+				"units": "xxxx"
+            },
+            {
+                "name": "public_space_proximity",
+                "value": 0.539834177,
+				"units": "xxxx"
+            },
+            {
+                "name": "high_school_proximity",
+                "value": 0.754190963,
+				"units": "xxxx"
+            },
+            {
+                "name": "secondary_school_proximity",
+                "value": 0.394535879,
+				"units": "xxxx"
+            },
+            {
+                "name": "elementary_school_proximity",
+                "value": 0.659002377,
+				"units": "xxxx"
+            },
+            {
+                "name": "school_proximity",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "transit_prox",
+                "value": 0.507148807,
+				"units": "xxxx"
+            },
+            {
+                "name": "job_prox",
+                "value": 0.761046556,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_infill_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_new_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "infrastructure_costs",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "municipal_service_costs",
+                "value": 661736.5557,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_buildings",
+                "value": 1243.65,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_swaste",
+                "value": 156.972388,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_transport",
+                "value": 5243.899328,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_water",
+                "value": 13.13961472,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_lighting",
+                "value": 22.25381994,
+				"units": "xxxx"
+            },
+            {
+                "name": "tot_water",
+                "value": 56.94514251,
+				"units": "xxxx"
+            },
+            {
+                "name": "energy_consumption",
+                "value": 6679.915151,
+				"units": "xxxx"
+            },
+            {
+                "name": "ghg_emissions",
+                "value": 2465.628982,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_density",
+                "value": 7719.249373,
+				"units": "xxxx"
+            },
+            {
+                "name": "infill_area_km2",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "land_consumption_km",
+                "value": 0.0,
+				"units": "xxxx"
+            },
+            {
+                "name": "footprint_km2",
+                "value": 299.56,
+				"units": "xxxx"
+            },
+            {
+                "name": "pop_total",
+                "value": 2312378.342,
+				"units": "xxxx"
+            }
+        ]
+    }
+]

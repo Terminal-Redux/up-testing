@@ -1,0 +1,130 @@
+<p-sidebar [(visible)]="displayLayers" [modal]="false" [dismissible]="false">
+        <form>
+            <div class="form-group">
+                <label class="text-uppercase" for="urban-city">Select a City</label>
+                <select class="form-control form-control-sm" name="urban-city" id="urban-city">
+                                    <optgroup label="This is a group">
+                                        <option value="12" selected>This is item 1</option>
+                                        <option value="13">This is item 2</option>
+                                        <option value="14">This is item 3</option>
+                                    </optgroup>
+                                </select>
+            </div>
+            <hr />
+            <div class="input-group">
+        
+                <input id="up-search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text"><mdb-icon fas icon="search"></mdb-icon></span>
+                </div>
+            </div>
+            <div class="collapse-container">
+                <div class="row mt-3" aria-expanded="false" aria-controls="collapse1" (click)="collapse1.toggle(); show=!show;" mdbWavesEffect>
+                    <h6 class="col-md-10">
+                        <mdb-icon fas icon="layer-group"></mdb-icon> General Data</h6>
+                    <span class="col-md-2"><mdb-icon fas icon="angle-down" *ngIf="!show"></mdb-icon><mdb-icon fas icon="angle-up" *ngIf="show"></mdb-icon></span>
+                </div>
+                <div mdbCollapse #collapse1="bs-collapse">
+                    <div class="data-box">
+                        <div class="form-row ">
+                            <div class="col-md-10">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-1" /><label class="custom-control-label" for="formCheck-1">
+                                        <mdb-icon fas icon="database"></mdb-icon> Metro area boundaries</label></div>
+                            </div>
+                            <div class="col-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="col-md-10">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-2" /><label class="custom-control-label" for="formCheck-2">
+                                        <mdb-icon fas icon="link"></mdb-icon> Base footprint</label></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                    <label class="custom-control-label" for="customSwitch2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="col-md-10">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-3" /><label class="custom-control-label" for="formCheck-3">
+                                        <mdb-icon fas icon="database"></mdb-icon> Urban footprint</label></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="col-md-10">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-4" /><label class="custom-control-label" for="formCheck-4">
+                                        <mdb-icon fas icon="link"></mdb-icon> Elementary schools</label></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                    <label class="custom-control-label" for="customSwitch4"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="col-md-10">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-5" /><label class="custom-control-label" for="formCheck-5">
+                                        <mdb-icon fas icon="random"></mdb-icon> Health</label></div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                                    <label class="custom-control-label" for="customSwitch5"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse-container">
+                <div class="row mt-2" aria-expanded="false" aria-controls="collapse2" (click)="collapse2.toggle(); show2=!show2;" mdbWavesEffect>
+                    <h6 class="col-md-10">
+                        <mdb-icon fas icon="layer-group"></mdb-icon> My Data</h6>
+                    <span class="col-md-2"><mdb-icon fas icon="angle-down" *ngIf="!show2"></mdb-icon><mdb-icon fas icon="angle-up" *ngIf="show2"></mdb-icon></span>
+                </div>
+                <div mdbCollapse #collapse2="bs-collapse">
+                    <div class="data-box">
+                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="formCheck-6" /><label class="custom-control-label" for="formCheck-6">
+                                <mdb-icon fas icon="plus"></mdb-icon> Add
+                                        data</label></div>
+                    </div>
+                </div>
+            </div>
+            <div id="project-status" class="pl-4 pb-4">
+                <div class="row">
+                    <div class="form-inline">
+                        <button mdbBtn type="button" class="waves-light p-2" color="mdb-color" mdbWavesEffect><mdb-icon fas icon="save"></mdb-icon> save project</button>
+                        <div class="form-group">
+                            <div class="custom-control custom-switch offset-md-10">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch6">
+        
+                                <label class="custom-control-label" for="customSwitch6">Edit</label>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="current-status" class="row">
+                    <div class="led-green mr-4"></div>
+                    <div id="#status-text" class="pb-2">
+                        <small>No errors</small>
+                    </div>
+                </div>
+            </div>
+        </form>
+</p-sidebar>
+<p-button icon="pi pi-angle-right" (onClick)="displayLayers = true" styleClass="ui-button-secondary" style="position:absolute; top:0px; left:0px;"></p-button>
