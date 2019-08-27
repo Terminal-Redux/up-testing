@@ -1,493 +1,457 @@
-<p-button  icon="pi pi-angle-left" (onClick)="displayTools = true" styleClass="ui-button-secondary" style="position:absolute;top:0px;right:0px;"></p-button>
+<p-button icon="pi pi-angle-left" (onClick)="displayTools = true" styleClass="ui-button-secondary"
+  style="position:absolute;top:0px;right:0px;"></p-button>
+<!--About dialog-->
+<p-dialog header="About" [(visible)]="displayAbout">
+  <div class="gp_modal">
+    <div class="container-fluid ">
+      <div class="row ">
+        <img src="assets/img/geoportal-about.PNG "
+          class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} col-md-12 "
+          alt="About the Geoportal ">
+      </div>
+    </div>
+  </div>
+</p-dialog>
+<p-dialog header="Analysis" [(visible)]="displayAnalysis">
+  <div class="gp_modal">
+    <div class="container-fluid text-left ">
+
+      <div class="form-group ">
+        <small>Select an analysis tool</small>
+        <select class="form-control " name="at-tool " id="at-tool ">
+          <option selected>Clip</option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="p-2 ">
+        <p><small>Buffer</small></p>
+        <p><small>Merge</small></p>
+        <p><small>Intersect</small></p>
+        <p><small>Union</small></p>
+        <p><small>Dissolve</small></p>
+        <hr>
+        <p><small>To raster</small></p>
+        <p><small>To point</small></p>
+        <hr>
+        <p><small>Overlay</small></p>
+      </div>
+    </div>
+
+  </div>
+</p-dialog>
+<p-dialog header="Symbology" [(visible)]="displaySymbology">
+  <div class="gp_modal ">
+    <div class="container-fluid text-left ">
+      <div class="form-group">
+        <label for="symb-layer "><small>Select layer</small></label>
+        <select class="form-control form-control-sm " name="symb-layer " id="symb-layer ">
+          <option selected>Layer</option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="form-row">
+        <img src="assets/img/geoportal-layers.PNG "
+          class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} col-md-12 "
+          alt=" ">
+      </div>
+      <hr>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="symb-column "><small>Select column</small></label>
+          <select class="form-control form-control-sm " name="symb-column " id="symb-column ">
+            <option selected>Column</option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="symb-cat"><small>Category</small></label><br>
+          <p-colorPicker [(ngModel)]="colorCat1" id="symb-cat" appendTo="body"></p-colorPicker>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="form-group">
+            <label for="symb-quant "><small>Quantities</small></label>
+            <input class="form-control form-control-sm" type="number " name="symb-quant " id="symb-quant " value="5 ">
+          </div>
+        </div>
+        <div class="form-group col-md-6 ">
+          <label for="symb-cat2"></label><br>
+          <p-colorPicker [(ngModel)]="colorCat2" id="symb-cat2" appendTo="body"></p-colorPicker>
+        </div>
+
+      </div>
+      <hr>
+      <div class="form-row justify-content-md-center ">
+        <small class="col-md-4 ">Symbology</small>
+        <div class="col-md-8 ">
+          <span class="badge badge-dark ">
+            <mdb-icon far icon="circle " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark ">
+            <mdb-icon far icon="square " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark ">
+            <mdb-icon fas icon="exclamation-triangle " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark ">
+            <mdb-icon fas icon="certificate " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark ">
+            <mdb-icon far icon="star " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark ">
+            <mdb-icon fas icon="plus " size="2x "></mdb-icon>
+          </span>
+        </div>
+      </div>
+      <hr>
+
+      <div class="form-group row ">
+        <label for="symb-label " class="col-md-3 col-form-label "><small class="align-middle ">Label
+            field</small></label>
+        <div class="col-md-9 ">
+          <select class="form-control form-control-sm " name="symb-label " id="symb-label">
+            <option selected>Name</option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row ">
+        <div class="form-group col-md-4 ">
+          <select class="form-control form-control-sm " name=" " id=" ">
+            <option></option>
+            <option selected>Helvetica</option>
+            <option></option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control form-control-sm " type="number" name="" id="" min="0" value="7 ">
+        </div>
+        <div class="form-group col-md-3">
+          <span class="badge badge-dark mx-1">
+            <mdb-icon fas icon="bold " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark mx-1">
+            <mdb-icon fas icon="italic " size="2x "></mdb-icon>
+          </span>
+          <span class="badge badge-dark mx-1">
+            <mdb-icon fas icon="underline " size="2x "></mdb-icon>
+          </span>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="symb-font"></label>
+          <p-colorPicker [(ngModel)]="colorFont" id="symb-font" appendTo="body"></p-colorPicker>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</p-dialog>
+<p-dialog header="Edit" [(visible)]="displayEdit">
+  <div class="gp_modal ">
+    <div class="container-fluid ">
+      <div class="row justify-content-md-center ">
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="mouse-pointer " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="wave-square " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="draw-polygon " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="save " size="2x "></mdb-icon>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</p-dialog>
+<p-dialog header="Add" [(visible)]="displayAdd">
+  <div class="gp_modal ">
+    <div class="container-fluid ">
+      <div class="row justify-content-md-center ">
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="vector-square " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="wave-square " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="draw-polygon " size="2x "></mdb-icon>
+        </button>
+        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
+          <mdb-icon fas icon="save " size="2x "></mdb-icon>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</p-dialog>
+<p-dialog header="Settings" [(visible)]="displaySettings" [maximizable]="true" [contentStyle]="{'overflow':'visible'}">
+  <div class="gp_modal container-fluid mb-2 py-2">
+    <h6 class="text-uppercase text-left">create scenario</h6>
+    <hr class="gp_orange">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="form-inline">
+          <input type="text" class="form-control form-control-sm col-md-3" name="scenario-name" id="scenario-name"
+            aria-describedby="helpId" placeholder="Name">
+          <select class="form-control form-control-sm col-md-6" name="" id="">
+            <option selected><i class="fas fa-plus"></i> Add indicators</option>
+            <option></option>
+            <option></option>
+          </select>
+          <input type="text" class="form-control form-control-sm col-md-3" placeholder="My Data" data-toggle="tooltip"
+            data-placement="top" title="Please indicate where the scenario will be moved to">
+        </div>
+      </div>
+    </div>
+    <h6 class="text-uppercase text-left pt-2">create scenario</h6>
+    <hr class="gp_orange">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+          1</button>
+        <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+          2</button>
+        <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+          3</button>
+        <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+          4</button>
+      </div>
+      <div class="row justify-content-center">
+        <button mdbBtn class="waves-light" mdbWavesEffect color="deep-orange">
+          <mdb-icon fas icon="calculator"></mdb-icon> Calculate
+        </button>
+      </div>
+    </div>
+    <h6 class="text-uppercase text-left pt-2">Results</h6>
+    <hr class="gp_orange">
+    <ngb-tabset type="pills" justify="justified">
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <mdb-icon size="3x" fas icon="table"></mdb-icon>
+        </ng-template>
+        <ng-template ngbTabContent class="px-2 py-2">
+          <table mdbTable borderless="true">
+            <thead>
+              <tr class="text-center">
+                <th scope="col"></th>
+                <th scope="col" class="scenario-base">Scenario 1</th>
+                <th scope="col" class="scenario-active">Scenario 2</th>
+                <th scope="col" class="scenario-inactive">Scenario 3</th>
+                <th scope="col" class="scenario-inactive">Scenario 4</th>
+              </tr>
+            </thead>
+            <tbody class="table-title  results-table">
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">
+                  <p>School proximity</p>
+                  <small class="measure">km2</small>
+                </th>
+                <td class="text-center align-middle">0</td>
+                <td class="text-center align-middle">10</td>
+                <td class="text-center align-middle"></td>
+                <td class="text-center align-middle"></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">
+                  <p>Infill area</p>
+                  <small class="measure">km2</small>
+                </th>
+                <td class="text-center align-middle">0</td>
+                <td class="text-center align-middle">15</td>
+                <td class="text-center align-middle"></td>
+                <td class="text-center align-middle"></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">
+                  <p>Population density</p>
+                  <small class="measure">pop/km2</small>
+                </th>
+                <td class="text-center align-middle">900</td>
+                <td class="text-center align-middle">2500</td>
+                <td class="text-center align-middle"></td>
+                <td class="text-center align-middle"></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">
+                  <p>Infrastructure costs</p>
+                  <small class="measure">Million USD</small>
+                </th>
+                <td class="text-center align-middle">100</td>
+                <td class="text-center align-middle">80</td>
+                <td class="text-center align-middle"></td>
+                <td class="text-center align-middle"></td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <mdb-icon size="3x" fas icon="chart-line"></mdb-icon>
+        </ng-template>
+        <ng-template ngbTabContent class="px-2 py-2">
+          <h5 class="text-uppercase pl-2 pt-2 text-left results-title">chart</h5>
+          <hr class="gp_orange pl-2">
+          <p-chart type="radar" [data]="data" [options]="options"></p-chart>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <mdb-icon size="3x" fas icon="divide"></mdb-icon>
+        </ng-template>
+        <ng-template ngbTabContent class="px-2 py-2">
+          <div class="form-inline pl-2 pt-3 mb-2">
+            <div class="form-group">
+              <label for="base-scenario" class="mr-3">
+                <h6 class="table-title">Select base scenario</h6>
+              </label>
+              <select name="base-scenario" id="base-scenario" class="form-control-sm">
+                <option value="">Scenario 1</option>
+                <option value="">Scenario 2</option>
+                <option value="">Scenario 3</option>
+                <option value="">Scenario 4</option>
+              </select>
+            </div>
+          </div>
+          <table mdbTable borderless="true">
+            <thead>
+              <tr class="text-center">
+                <th scope="col"></th>
+                <th scope="col" class="scenario-active">Scenario 2</th>
+                <th scope="col" class="scenario-inactive">Scenario 3</th>
+                <th scope="col" class="scenario-inactive">Scenario 4</th>
+              </tr>
+            </thead>
+            <tbody class="table-title  results-table">
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">School proximity</th>
+                <td class="positive-result text-center">-20%</td>
+                <td class="text-center"></td>
+                <td></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">Infill area</th>
+                <td class="text-center">40%</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">Population density</th>
+                <td class="text-center">10%</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+              </tr>
+              <tr mdbTableCol>
+                <th scope="row" class="text-left">Infrastructure cost</th>
+                <td class="positive-result text-center">-20%</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <mdb-icon size="3x" fas icon="leaf"></mdb-icon>
+        </ng-template>
+        <ng-template ngbTabContent class="px-2 py-2">
+          <h5 class="text-uppercase pt-2 pl-2 results-title text-left">sustainable development goals</h5>
+          <hr class="gp_orange pl-2">
+          <h6 class="table-title text-left pl-2">SDG 9 - Industry, innovation & infrastructure</h6>
+          <table mdbTable class="results-text">
+            <tbody>
+              <tr mdbTableCol>
+                <td>Proximity to roads</td>
+                <td class="text-right "><span class="highlight-results ">48%</span> of population
+                </td>
+              </tr>
+              <tr mdbTableCol>
+                <td>Proximity to WIFI hotspots</td>
+                <td class="text-right "><span class="highlight-results ">58%</span> of population
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr class="gp_orange_large ">
+          <h6 class="table-title text-left pl-2 ">SDG 11 - Sustainable cities & communities</h6>
+          <table mdbTable class="results-text">
+            <tbody>
+              <tr mdbTableCol>
+                <td>Proximity to roads</td>
+                <td class="text-right "><span class="highlight-results ">48%</span> of population
+                </td>
+              </tr>
+              <tr mdbTableCol>
+                <td>Proximity to WIFI hotspots</td>
+                <td class="text-right "><span class="highlight-results ">58%</span> of population
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <mdb-icon size="3x " fas icon="question-circle "></mdb-icon>
+        </ng-template>
+        <ng-template ngbTabContent class="px-2 py-2 ">
+          <h5 class="text-uppercase pl-2 pt-2 results-title text-left ">Help</h5>
+          <hr class="gp_orange pl-2 ">
+          <div class="results-text mx-3 my-3 pb-2 text-justify ">
+            <p>To use this tool you must have uploaded the assumptions and criteria tables in your geoportal.</p>
+            <p>If you have any further questions, please visit <a href="# ">urbanperformance.in</a>, where you will
+              be able to see more information about the tool.</p>
+          </div>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</p-dialog>
 <p-sidebar [(visible)]="displayTools" [modal]="false" [dismissible]="false" position="right" [style]="{width: '8em'}">
-    <ul class="btn-list list-unstyled">
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upSettings.show()" type="button" mdbWavesEffect>
-                    <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
-                    </button>
-        </li>
-        <hr style="color: #4B565F;background-color: #4B565F;" />
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upAdd.show()" type="button" mdbWavesEffect>
-                <mdb-icon fas icon="plus" size="2x"></mdb-icon>
-                </button>
-        </li>
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upEdit.show()" type="button" mdbWavesEffect>
-                    <mdb-icon fas icon="draw-polygon" size="2x"></mdb-icon>
-                </button>
-        </li>
-        <hr style="color: #4B565F;background-color: #4B565F;" />
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upAnalysis.show()" type="button" mdbWavesEffect>
-                    <mdb-icon fas icon="globe" size="2x"></mdb-icon>
-                </button>
-        </li>
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upSymbology.show()" type="button" mdbWavesEffect>
-                    <mdb-icon fas icon="paint-brush" size="2x"></mdb-icon>
-                </button>
-        </li>
-        <hr style="color: #4B565F;background-color: #4B565F;" />
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="upAbout.show()" type="button" mdbWavesEffect>
-                    <mdb-icon fas icon="question-circle" size="2x"></mdb-icon>
-                </button>
-        </li>
-    </ul>
+  <ul class="btn-list list-unstyled">
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showSettings()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
+      </button>
+    </li>
+    <hr style="color: #4B565F;background-color: #4B565F;" />
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAdd()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="plus" size="2x"></mdb-icon>
+      </button>
+    </li>
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showEdit()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="draw-polygon" size="2x"></mdb-icon>
+      </button>
+    </li>
+    <hr style="color: #4B565F;background-color: #4B565F;" />
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAnalysis()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="globe" size="2x"></mdb-icon>
+      </button>
+    </li>
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showSymbology()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="paint-brush" size="2x"></mdb-icon>
+      </button>
+    </li>
+    <hr style="color: #4B565F;background-color: #4B565F;" />
+    <li>
+      <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAbout()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="question-circle" size="2x"></mdb-icon>
+      </button>
+    </li>
+  </ul>
 </p-sidebar>
-<div mdbModal style="overflow-y: auto" class="modal fade" #upSettings="mdbModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" [config]="{backdrop:false}">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content gp_modal container-fluid">
-            <div class="modal-header">
-                <h5 class="modal-title">Settings</h5>
-                <button type="button" class="close" (click)="upSettings.hide()" aria-label="Close">
-                                <mdb-icon fas icon="angle-double-right"></mdb-icon>
-                            </button>
-            </div>
-            <div class="modal-body">
-                <h6 class="text-uppercase text-left">create scenario</h6>
-                <hr class="gp_orange">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="form-inline">
-                            <input type="text" class="form-control form-control-sm col-md-3" name="scenario-name" id="scenario-name" aria-describedby="helpId" placeholder="Name">
-                            <select class="form-control form-control-sm col-md-6" name="" id="">
-                                            <option selected><i class="fas fa-plus"></i> Add indicators</option>
-                                            <option></option>
-                                            <option></option>
-                                        </select>
-                            <input type="text" class="form-control form-control-sm col-md-3" placeholder="My Data" data-toggle="tooltip" data-placement="top" title="Please indicate where the scenario will be moved to">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h6 class="text-uppercase text-left">create scenario</h6>
-                <hr class="gp_orange">
-                <div class="container-fluid">
-                    <div class="row text-justified">
-                        <button class="mx-1 waves-light" type="button" mdbBtn size="sm" color="elegant" mdbWavesEffect>Scenario 1</button>
-                        <button class="mx-1 waves-light" type="button" mdbBtn size="sm" color="elegant" mdbWavesEffect>Scenario 2</button>
-                        <button class="mx-1 waves-light" type="button" mdbBtn size="sm" color="elegant" mdbWavesEffect>Scenario 3</button>
-                        <button class="mx-1 waves-light" type="button" mdbBtn size="sm" color="elegant" mdbWavesEffect>Scenario 4</button>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button mdbBtn class="waves-light" mdbWavesEffect color="deep-orange"><mdb-icon fas icon="calculator"></mdb-icon> Calculate</button>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h6 class="text-uppercase text-left">Results</h6>
-                <hr class="gp_orange">
-                <ngb-tabset type="pills" justify="justified">
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                            <mdb-icon size="3x" fas icon="table"></mdb-icon>
-                        </ng-template>
-                        <ng-template ngbTabContent class="px-2 py-2">
-                            <table mdbTable borderless="true">
-                                <thead>
-                                    <tr class="text-center">
-                                        <th scope="col"></th>
-                                        <th scope="col" class="scenario-base">Scenario 1</th>
-                                        <th scope="col" class="scenario-active">Scenario 2</th>
-                                        <th scope="col" class="scenario-inactive">Scenario 3</th>
-                                        <th scope="col" class="scenario-inactive">Scenario 4</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-title  results-table">
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">
-                                            <p>School proximity</p>
-                                            <small class="measure">km2</small>
-                                        </th>
-                                        <td class="text-center align-middle">0</td>
-                                        <td class="text-center align-middle">10</td>
-                                        <td class="text-center align-middle"></td>
-                                        <td class="text-center align-middle"></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">
-                                            <p>Infill area</p>
-                                            <small class="measure">km2</small>
-                                        </th>
-                                        <td class="text-center align-middle">0</td>
-                                        <td class="text-center align-middle">15</td>
-                                        <td class="text-center align-middle"></td>
-                                        <td class="text-center align-middle"></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">
-                                            <p>Population density</p>
-                                            <small class="measure">pop/km2</small>
-                                        </th>
-                                        <td class="text-center align-middle">900</td>
-                                        <td class="text-center align-middle">2500</td>
-                                        <td class="text-center align-middle"></td>
-                                        <td class="text-center align-middle"></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">
-                                            <p>Infrastructure costs</p>
-                                            <small class="measure">Million USD</small>
-                                        </th>
-                                        <td class="text-center align-middle">100</td>
-                                        <td class="text-center align-middle">80</td>
-                                        <td class="text-center align-middle"></td>
-                                        <td class="text-center align-middle"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </ng-template>
-                    </ngb-tab>
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                            <mdb-icon size="3x" fas icon="chart-line"></mdb-icon>
-                        </ng-template>
-                        <ng-template ngbTabContent class="px-2 py-2">
-                            <h5 class="text-uppercase pl-2 pt-2 text-left results-title">chart</h5>
-                            <hr class="gp_orange pl-2">
-                            <p-chart type="radar" [data]="data" [options]="options"></p-chart>
-                        </ng-template>
-                    </ngb-tab>
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                            <mdb-icon size="3x" fas icon="divide"></mdb-icon>
-                        </ng-template>
-                        <ng-template ngbTabContent class="px-2 py-2">
-                            <div class="form-inline pl-2 pt-3 mb-2">
-                                <div class="form-group">
-                                    <label for="base-scenario" class="mr-3">
-                                                            <h6 class="table-title">Select base scenario</h6>
-                                                        </label>
-                                    <select name="base-scenario" id="base-scenario" class="form-control-sm">
-                                                            <option value="">Scenario 1</option>
-                                                            <option value="">Scenario 2</option>
-                                                            <option value="">Scenario 3</option>
-                                                            <option value="">Scenario 4</option>
-                                                        </select>
-                                </div>
-                            </div>
-                            <table mdbTable borderless="true">
-                                <thead>
-                                    <tr class="text-center">
-                                        <th scope="col"></th>
-                                        <th scope="col" class="scenario-active">Scenario 2</th>
-                                        <th scope="col" class="scenario-inactive">Scenario 3</th>
-                                        <th scope="col" class="scenario-inactive">Scenario 4</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-title  results-table">
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">School proximity</th>
-                                        <td class="positive-result text-center">-20%</td>
-                                        <td class="text-center"></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">Infill area</th>
-                                        <td class="text-center">40%</td>
-                                        <td class="text-center"></td>
-                                        <td class="text-center"></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">Population density</th>
-                                        <td class="text-center">10%</td>
-                                        <td class="text-center"></td>
-                                        <td class="text-center"></td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <th scope="row" class="text-left">Infrastructure cost</th>
-                                        <td class="positive-result text-center">-20%</td>
-                                        <td class="text-center"></td>
-                                        <td class="text-center"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </ng-template>
-                    </ngb-tab>
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                            <mdb-icon size="3x" fas icon="leaf"></mdb-icon>
-                        </ng-template>
-                        <ng-template ngbTabContent class="px-2 py-2">
-                            <h5 class="text-uppercase pt-2 pl-2 results-title text-left">sustainable development goals</h5>
-                            <hr class="gp_orange pl-2">
-                            <h6 class="table-title text-left pl-2">SDG 9 - Industry, innovation & infrastructure</h6>
-                            <table mdbTable class="results-text">
-                                <tbody>
-                                    <tr mdbTableCol>
-                                        <td>Proximity to roads</td>
-                                        <td class="text-right "><span class="highlight-results ">48%</span> of population
-                                        </td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <td>Proximity to WIFI hotspots</td>
-                                        <td class="text-right "><span class="highlight-results ">58%</span> of population
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <hr class="gp_orange_large ">
-                            <h6 class="table-title text-left pl-2 ">SDG 11 - Sustainable cities & communities</h6>
-                            <table mdbTable class="results-text">
-                                <tbody>
-                                    <tr mdbTableCol>
-                                        <td>Proximity to roads</td>
-                                        <td class="text-right "><span class="highlight-results ">48%</span> of population
-                                        </td>
-                                    </tr>
-                                    <tr mdbTableCol>
-                                        <td>Proximity to WIFI hotspots</td>
-                                        <td class="text-right "><span class="highlight-results ">58%</span> of population
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </ng-template>
-                    </ngb-tab>
-                    <ngb-tab>
-                        <ng-template ngbTabTitle>
-                            <mdb-icon size="3x " fas icon="question-circle "></mdb-icon>
-                        </ng-template>
-                        <ng-template ngbTabContent class="px-2 py-2 ">
-                            <h5 class="text-uppercase pl-2 pt-2 results-title text-left ">Help</h5>
-                            <hr class="gp_orange pl-2 ">
-                            <div class="results-text mx-3 my-3 pb-2 text-justify ">
-                                <p>To use this tool you must have uploaded the assumptions and criteria tables in your geoportal.</p>
-                                <p>If you have any further questions, please visit <a href="# ">urbanperformance.in</a>, where you will be able to see more information about the tool.</p>
-                            </div>
-                        </ng-template>
-                    </ngb-tab>
-                </ngb-tabset>
-            </div>
-        </div>
-    </div>
-</div>
-<div mdbModal class="modal fade" #upAdd="mdbModal" tabindex="-1 " role="dialog " aria-labelledby="modelTitleId " aria-hidden="true " [config]="{backdrop:false} ">
-    <div class="modal-dialog modal-sm " role="document ">
-        <div class="modal-content gp_modal ">
-            <div class="modal-header ">
-                <h5 class="modal-title ">Add</h5>
-                <button type="button" class="close " data-dismiss="modal " aria-label="Close " (click)="upAdd.hide() ">
-                            <i class="fas fa-angle-double-right "></i>
-                        </button>
-            </div>
-            <div class="modal-body ">
-                <div class="container-fluid ">
-                    <div class="row justify-content-md-center ">
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                <mdb-icon fas icon="vector-square " size="2x "></mdb-icon>
-                        </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                <mdb-icon fas icon="wave-square " size="2x "></mdb-icon>
-                        </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                <mdb-icon fas icon="draw-polygon " size="2x "></mdb-icon>
-                        </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                <mdb-icon fas icon="save " size="2x "></mdb-icon>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<div mdbModal class="modal fade" #upEdit="mdbModal" tabindex="-1 " role="dialog " aria-labelledby="modelTitleId " aria-hidden="true " [config]="{backdrop:false} ">
-    <div class="modal-dialog modal-sm " role="document ">
-        <div class="modal-content gp_modal ">
-            <div class="modal-header ">
-                <h5 class="modal-title ">Edit features</h5>
-                <button type="button" class="close " data-dismiss="modal " aria-label="Close " (click)="upEdit.hide() ">
-                            <i class="fas fa-angle-double-right "></i>
-                        </button>
-            </div>
-            <div class="modal-body ">
-                <div class="container-fluid ">
-                    <div class="row justify-content-md-center ">
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                    <mdb-icon fas icon="mouse-pointer " size="2x "></mdb-icon>
-                            </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                                <mdb-icon fas icon="wave-square " size="2x "></mdb-icon>
-                                        </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                                <mdb-icon fas icon="draw-polygon " size="2x "></mdb-icon>
-                                        </button>
-                        <button mdbBtn type="button" size sm="sm " color="blue-grey" class="p-2 " mdbWavesEffect>
-                                                <mdb-icon fas icon="save " size="2x "></mdb-icon>
-                                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<div mdbModal class="modal fade" #upAnalysis="mdbModal" tabindex="-1 " role="dialog " aria-labelledby="modelTitleId " aria-hidden="true " [config]="{backdrop:false} ">
-    <div class="modal-dialog modal-sm " role="document ">
-        <div class="modal-content gp_modal ">
-            <div class="modal-header ">
-                <h5 class="modal-title ">Analysis Tools</h5>
-                <button type="button" class="close " data-dismiss="modal " aria-label="Close " (click)="upAnalysis.hide() ">
-                            <i class="fas fa-angle-double-right "></i>
-                        </button>
-            </div>
-            <div class="modal-body ">
-                <div class="container-fluid text-left ">
-
-                    <div class="form-group ">
-                        <small>Select an analysis tool</small>
-                        <select class="form-control " name="at-tool " id="at-tool ">
-                                    <option selected>Clip</option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-                    </div>
-                    <div class="p-2 ">
-                        <p><small>Buffer</small></p>
-                        <p><small>Merge</small></p>
-                        <p><small>Intersect</small></p>
-                        <p><small>Union</small></p>
-                        <p><small>Dissolve</small></p>
-                        <hr>
-                        <p><small>To raster</small></p>
-                        <p><small>To point</small></p>
-                        <hr>
-                        <p><small>Overlay</small></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<div mdbModal style="overflow: visible;" class="modal fade" #upSymbology="mdbModal" tabindex="-1 " role="dialog " aria-labelledby="modelTitleId " aria-hidden="true " [config]="{backdrop:false} ">
-    <div class="modal-dialog " role="document ">
-        <div class="modal-content gp_modal ">
-            <div class="modal-header ">
-                <h5 class="modal-title ">Symbology</h5>
-                <button type="button" class="close " data-dismiss="modal " aria-label="Close " (click)="upSymbology.hide() ">
-                            <i class="fas fa-angle-double-right "></i>
-                        </button>
-            </div>
-            <div class="modal-body ">
-                <div class="container-fluid text-left ">
-                    <div class="form-group ">
-                        <label for="symb-layer "><small>Select layer</small></label>
-                        <select class="form-control form-control-sm " name="symb-layer " id="symb-layer ">
-                                    <option selected>Layer</option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-                    </div>
-                    <div class="form-row ">
-                        <img src="assets/img/geoportal-layers.PNG " class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} col-md-12 " alt=" ">
-                    </div>
-                    <hr>
-                    <div class="form-row ">
-                        <div class="form-group col-md-6 ">
-                            <label for="symb-column "><small>Select column</small></label>
-                            <select class="form-control form-control-sm " name="symb-column " id="symb-column ">
-                                        <option selected>Column</option>
-                                        <option></option>
-                                        <option></option>
-                                    </select>
-                        </div>
-                        <div class="form-group col-md-6 ">
-                            <label for="symb-cat"><small>Category</small></label>
-                            <input type="color" class="form-control form-control-sm" name="symb-cat" id="symb-cat" value="#75B82C">
-                        </div>
-                    </div>
-                    <div class="form-row ">
-                        <div class="form-group col-md-6 ">
-                            <div class="form-group ">
-                                <label for="symb-quant "><small>Quantities</small></label>
-                                <input class="form-control form-control-sm " type="number " name="symb-quant " id="symb-quant " value="5 ">
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6 ">
-                            <label for="symb-cat2"></label>
-                            <input type="color" class="form-control form-control-sm" name="symb-cat2" id="symb-cat2" value="#DECBD0">
-                        </div>
-
-                    </div>
-                    <hr>
-                    <div class="form-row justify-content-md-center ">
-                        <small class="col-md-4 ">Symbology</small>
-                        <div class="col-md-8 ">
-                            <span class="badge badge-dark "><mdb-icon far icon="circle " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon far icon="square " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon fas icon="exclamation-triangle " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon fas icon="certificate " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon far icon="star " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon fas icon="plus " size="2x "></mdb-icon></span>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="form-group row ">
-                        <label for="symb-label " class="col-md-3 col-form-label "><small class="align-middle ">Label
-                                        field</small></label>
-                        <div class="col-md-9 ">
-                            <select class="form-control form-control-sm " name="symb-label " id="symb-label ">
-                                        <option selected>Name</option>
-                                        <option></option>
-                                        <option></option>
-                                    </select>
-                        </div>
-                    </div>
-                    <div class="form-row ">
-                        <div class="form-group col-md-4 ">
-                            <select class="form-control form-control-sm " name=" " id=" ">
-                                        <option></option>
-                                        <option selected>Helvetica</option>
-                                        <option></option>
-                                    </select>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <input class="form-control form-control-sm " type="number" name="" id="" min="0" value="7 ">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <span class="badge badge-dark "><mdb-icon fas icon="bold " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon fas icon="italic " size="2x "></mdb-icon></span>
-                            <span class="badge badge-dark "><mdb-icon fas icon="underline " size="2x "></mdb-icon></span>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <input class="form-control form-control-sm" type="color" name="" id="">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-<div mdbModal class="modal fade" #upAbout="mdbModal" tabindex="-1 " role="dialog " aria-labelledby="modelTitleId " aria-hidden="true " [config]="{backdrop:false} ">
-    <div class="modal-dialog modal-sm " role="document ">
-        <div class="modal-content gp_modal ">
-            <div class="modal-header ">
-                <h5 class="modal-title ">About</h5>
-                <button type="button" class="close " data-dismiss="modal " aria-label="Close " (click)="upAbout.hide() ">
-                            <i class="fas fa-angle-double-right "></i>
-                        </button>
-            </div>
-            <div class="modal-body ">
-                <div class="container-fluid ">
-                    <div class="row ">
-                        <img src="assets/img/geoportal-about.PNG " class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} col-md-12 " alt="About the Geoportal ">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>

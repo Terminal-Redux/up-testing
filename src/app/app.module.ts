@@ -23,7 +23,6 @@ import {SidebarModule} from 'primeng/sidebar';
 import {DialogModule} from 'primeng/dialog';
 import { ExponentialPipe } from './custom-pipes/exponential.pipe';
 
-
 @NgModule({
   declarations: [
     AppComponent,

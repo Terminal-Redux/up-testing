@@ -19,10 +19,45 @@ export class ToolsSidebarComponent implements OnInit {
   data: any;
   options: any;
   displayTools: boolean;
+
+  displaySettings = false;
+  displayAdd = false;
+  displayEdit = false;
+  displayAnalysis = false;
+  displaySymbology = false;
+  displayAbout = false;
+
+  colorCat1: string;
+  colorCat2: string;
+  colorFont: string;
   /*scenarioId: number[];
   scenarioName: string[];
   scenarioInfo: object[];
   scenResObj: object[];*/
+
+  showAbout() {
+      this.displayAbout = true;
+  }
+
+  showSymbology() {
+    this.displaySymbology = true;
+}
+
+showAnalysis() {
+    this.displayAnalysis = true;
+}
+
+showEdit() {
+    this.displayEdit = true;
+}
+
+showAdd() {
+    this.displayAdd = true;
+}
+
+showSettings() {
+    this.displaySettings = true;
+}
 
 
     constructor() {
@@ -86,6 +121,9 @@ export class ToolsSidebarComponent implements OnInit {
           }
       };
         this.displayTools = false;
+        this.colorCat1 = '#75B82C';
+        this.colorCat2 = '#DECBD0';
+        this.colorFont = '#000000';
   }
 
   ngOnInit() {
