@@ -21,6 +21,7 @@ import {ChartModule} from 'primeng/chart';
 import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {DialogModule} from 'primeng/dialog';
+import {SliderModule} from 'primeng/slider';
 import { ExponentialPipe } from './custom-pipes/exponential.pipe';
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ExponentialPipe } from './custom-pipes/exponential.pipe';
     ChartModule,
     ButtonModule,
     SidebarModule,
-    DialogModule
+    DialogModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

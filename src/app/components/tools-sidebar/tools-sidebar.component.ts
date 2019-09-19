@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as json_data from '../../json-samples/scenario_results_all.json';
 
 @Component({
@@ -20,7 +20,8 @@ export class ToolsSidebarComponent implements OnInit {
   options: any;
   displayTools: boolean;
 
-  displaySettings = false;
+  displayUP = false;
+  displayST = false;
   displayAdd = false;
   displayEdit = false;
   displayAnalysis = false;
@@ -30,10 +31,23 @@ export class ToolsSidebarComponent implements OnInit {
   colorCat1: string;
   colorCat2: string;
   colorFont: string;
+
+  rangeValues1: number[];
+  rangeValues2: number[];
+  rangeValues3: number[];
+
+  filters: ['District: Denpasar Barat', 'District: Denpasar Selatan', 'District: Denpasar Timur', 'District: Denpasar Utaral',
+            'Land Cover: Agricultural', 'Land Cover: Commercial', 'Land Cover: Open Space', 'Land Cover: Industrial',
+            'Land Cover: Slums', 'Land Cover: Residential 0-10', 'Land Cover: Residential 10-30', 'Land Cover: Residential 30-50',
+            'Land Cover: Residential 50-80', 'Land Cover: Residential 80-100', 'Land Cover: Residential no data',
+            'Disaster: Flooding Risk'];
   /*scenarioId: number[];
   scenarioName: string[];
   scenarioInfo: object[];
   scenResObj: object[];*/
+
+  @Input() upAct: boolean;
+  @Input() stAct: boolean;
 
   showAbout() {
       this.displayAbout = true;
@@ -55,8 +69,12 @@ showAdd() {
     this.displayAdd = true;
 }
 
-showSettings() {
-    this.displaySettings = true;
+showUP() {
+    this.displayUP = true;
+}
+
+showST() {
+    this.displayST = true;
 }
 
 
@@ -124,6 +142,9 @@ showSettings() {
         this.colorCat1 = '#75B82C';
         this.colorCat2 = '#DECBD0';
         this.colorFont = '#000000';
+        this.rangeValues1 = [0, 1000];
+        this.rangeValues2 = [0, 1000];
+        this.rangeValues3 = [0, 100];
   }
 
   ngOnInit() {
