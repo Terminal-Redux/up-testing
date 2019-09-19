@@ -10,6 +10,9 @@ export class LayersSidebarComponent implements OnInit {
   show2: boolean;
   displayLayers: boolean;
 
+  @Input() upAct: boolean;
+  @Input() stAct: boolean;
+
   constructor() {
     this.show = false;
     this.show2 = false;

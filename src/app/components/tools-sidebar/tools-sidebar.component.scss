@@ -1,4 +1,12 @@
 @import '../../../styles.scss';
+.up-button {
+    background-color: $geo-orange-2;
+}
+
+.st-button {
+    background-color: $geo-teal;
+}
+
 .gp_modal .tab-content .results-table {
     background-color: #4A555F;
 }
@@ -33,6 +41,7 @@
     background: #343E46;
     color: #FEFEFE;
     height: 100%;
+    font-family: $main-font;
 }
 
 #up_settings .gp_modal {
@@ -50,6 +59,12 @@
 
 .gp_modal hr.gp_orange {
     border-color: $geo-orange;
+    width: 8%;
+    margin-left: 1%;
+}
+
+.gp_modal hr.gp_teal {
+    border-color: $geo-teal;
     width: 8%;
     margin-left: 1%;
 }
@@ -84,10 +99,16 @@
     color: #4B565F !important;
 }
 
-::ng-deep .gp_modal .nav-item .active,
-::ng-deep .tab-content .active {
+::ng-deep #urbanperformance.gp_modal .nav-item .active,
+::ng-deep #urbanperformance .tab-content .active {
     background: #4B565F !important;
     color: $geo-orange !important;
+}
+
+::ng-deep #suitability.gp_modal .nav-item .active,
+::ng-deep #suitability .tab-content .active {
+    background: #4B565F !important;
+    color: $geo-teal !important;
 }
 
 .table-title {
@@ -111,115 +132,17 @@ small.measure {
     color: #6D7984;
 }
 
-@import '../../../styles.scss';
-.gp_modal .tab-content .results-table {
-    background-color: #4A555F;
+::ng-deep #suitability .ui-slider .ui-slider-handle {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
-.results-table .positive-result {
+::ng-deep #suitability .ui-slider:not(.ui-state-disabled) .ui-slider-handle:hover,
+#suitability .custom-control-input:checked~.custom-control-label::before {
     background-color: $geo-teal;
+    border-color: $geo-teal;
 }
 
-.scenario-base {
-    color: $geo-orange;
-}
-
-.scenario-active {
-    color: $geo-teal;
-}
-
-.scenario-inactive {
-    color: #63737E;
-}
-
-.gp_modal .close {
-    color: #667989;
-    opacity: 1;
-    text-shadow: 0;
-}
-
-.modal-backdrop {
-    opacity: 0 !important;
-}
-
-.gp_modal {
-    background: #343E46;
-    color: #FEFEFE;
-    height: 100%;
-}
-
-#up_settings .gp_modal {
-    background: #273038;
-}
-
-.gp_modal .badge-dark {
-    background: #273038;
-}
-
-#up_settings .gp_modal .badge-dark {
-    background: #343E46;
-    color: #5A6C79;
-}
-
-.gp_modal hr.gp_orange {
-    border-color: $geo-orange;
-    width: 8%;
-    margin-left: 1%;
-}
-
-.gp_modal hr.gp_orange_large {
-    border-color: $geo-orange;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.gp_modal .form-control-sm,
-.gp_modal .form-control,
-.gp_modal ::placeholder,
-#up-search,
-.input-group-text {
-    background: $geo-modal-input;
-    color: $geo-modal-input-txt;
-}
-
-.gp_modal .modal-header,
-.gp_modal .modal-footer {
-    border-color: #313C45;
-}
-
-
-/*.gp_modal .nav-tabs .nav-item .active {
-    color: #BF6C6B;
-}*/
-
-::ng-deep .gp_modal .nav-item .nav-link {
-    background: #343E46 !important;
-    color: #4B565F !important;
-}
-
-::ng-deep .gp_modal .nav-item .active,
-::ng-deep .tab-content .active {
-    background: #4B565F !important;
-    color: $geo-orange !important;
-}
-
-.table-title {
-    color: #F5F5F6 !important;
-}
-
-.results-text {
-    color: #8E979F !important;
-}
-
-.highlight-results,
-::ng-deep .tab-content a {
-    color: $geo-orange !important;
-}
-
-::ng-deep .tab-content .results-title {
-    color: #C0C4C6 !important;
-}
-
-small.measure {
-    color: #6D7984;
+::ng-deep #suitability .ui-slider .ui-slider-range {
+    background-color: $geo-teal;
 }

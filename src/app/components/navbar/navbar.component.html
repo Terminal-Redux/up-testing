@@ -3,7 +3,10 @@
 
     <div class="container-fluid">
         <!-- Navbar brand -->
-        <mdb-navbar-brand><a class="navbar-brand" href="#">Geoportal - Urban Performance</a></mdb-navbar-brand>
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href="#" *ngIf="upAct && !stAct">Geoportal - Urban Performance</a>
+            <a class="navbar-brand" href="#" *ngIf="stAct && !upAct">Geoportal - Urban Performance</a>
+        </mdb-navbar-brand>
 
         <!-- Collapsible content -->
         <links>
