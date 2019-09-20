@@ -16,6 +16,7 @@ export class LayersSidebarComponent implements OnInit {
   constructor() {
     this.show = false;
     this.show2 = false;
+    this.displayLayers = true;
    }
   ngOnInit() {
   }

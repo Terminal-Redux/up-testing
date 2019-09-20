@@ -4,6 +4,14 @@
     bottom: 0;
 }
 
+.smaller-font {
+    font-size: .8em;
+}
+
+h6.smaller-font {
+    font-size: .9em;
+}
+
 .data-box {
     background-color: #4B565F;
     height: auto;
@@ -196,4 +204,12 @@
     height: auto;
     padding: 10px;
     color: #CCCFD1;
+}
+
+::ng-deep .ui-sidebar-left {
+    top: 56px !important;
+}
+
+::ng-deep .ui-widget {
+    font-family: $main-font !important;
 }

@@ -1,4 +1,4 @@
-<p-button icon="pi pi-angle-left" (onClick)="displayTools = true" styleClass="ui-button-secondary" style="position:absolute;top:0px;right:0px;"></p-button>
+<p-button icon="pi pi-angle-left" (onClick)="displayTools = true" styleClass="ui-button-secondary" style="position:absolute;top:10px;right:0px;"></p-button>
 <!--About dialog-->
 <p-dialog header="About" [(visible)]="displayAbout">
     <div class="gp_modal">
@@ -15,7 +15,7 @@
 
             <div class="form-group ">
                 <small>Select an analysis tool</small>
-                <select class="form-control " name="at-tool " id="at-tool ">
+                <select class="form-control " name="at-tool" id="at-tool">
           <option selected>Clip</option>
           <option></option>
           <option></option>
@@ -189,237 +189,259 @@
 
     </div>
 </p-dialog>
-<p-dialog header="UrbanPerformance" appendTo="body" [(visible)]="displayUP" [maximizable]="true">
+<p-dialog header="UrbanPerformance" appendTo="body" [(visible)]="displayUP" [maximizable]="true" [style]="{'max-height':'60em', 'max-width':'50em', 'width':'50em'}" [positionLeft]="766" [positionTop]="56">
     <div class="gp_modal container-fluid mb-2 py-2" id="urbanperformance">
-        <h6 class="text-uppercase text-left">create scenario</h6>
-        <hr class="gp_orange">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="form-inline">
-                    <input type="text" class="form-control form-control-sm col-md-3" name="scenario-name" id="scenario-name" aria-describedby="helpId" placeholder="Name">
-                    <select class="form-control form-control-sm col-md-6" name="" id="">
-            <option selected><i class="fas fa-plus"></i> Add indicators</option>
-            <option></option>
-            <option></option>
-          </select>
-                    <input type="text" class="form-control form-control-sm col-md-3" placeholder="My Data" data-toggle="tooltip" data-placement="top" title="Please indicate where the scenario will be moved to">
+        <div aria-expanded="false" aria-controls="showUPCreate" (click)="showUPCreate.toggle(); showCreate = !showCreate;">
+            <h6 class="text-uppercase text-left">create scenario
+                <mdb-icon fas icon="angle-down" *ngIf="!showCreate"></mdb-icon>
+                <mdb-icon fas icon="angle-up" *ngIf="showCreate"></mdb-icon>
+            </h6>
+            <hr class="gp_orange">
+        </div>
+
+        <div class="" mdbCollapse #showUPCreate="bs-collapse">
+            <div class="container-fluid p-2">
+                <div class="row">
+                    <div class="form-inline">
+                        <input type="text" class="form-control form-control-sm col-md-3" name="scenario-name" id="scenario-name" aria-describedby="helpId" placeholder="Name">
+                        <select class="form-control form-control-sm col-md-6" name="" id="">
+                <option selected><i class="fas fa-plus"></i> Add indicators</option>
+                <option></option>
+                <option></option>
+              </select>
+                        <input type="text" class="form-control form-control-sm col-md-3" placeholder="My Data" data-toggle="tooltip" data-placement="top" title="Please indicate where the scenario will be moved to">
+                    </div>
                 </div>
             </div>
         </div>
-        <h6 class="text-uppercase text-left pt-2">create scenario</h6>
-        <hr class="gp_orange">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
-          1</button>
-                <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
-          2</button>
-                <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
-          3</button>
-                <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
-          4</button>
-            </div>
-            <div class="row justify-content-center">
-                <button mdbBtn class="waves-light" mdbWavesEffect color="deep-orange">
-          <mdb-icon fas icon="calculator"></mdb-icon> Calculate
-        </button>
+        <div aria-expanded="false" aria-controls="showUPManage" (click)="showUPManage.toggle(); showManage = !showManage">
+            <h6 class="text-uppercase text-left">manage data
+                <mdb-icon fas icon="angle-down" *ngIf="!showManage"></mdb-icon>
+                <mdb-icon fas icon="angle-up" *ngIf="showManage"></mdb-icon>
+            </h6>
+            <hr class="gp_orange">
+        </div>
+        <div class="" mdbCollapse #showUPManage="bs-collapse">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-center">
+                    <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+              1</button>
+                    <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+              2</button>
+                    <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+              3</button>
+                    <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
+              4</button>
+                </div>
+                <div class="row justify-content-center">
+                    <button mdbBtn class="waves-light" mdbWavesEffect color="deep-orange">
+              <mdb-icon fas icon="calculator"></mdb-icon> Calculate
+            </button>
+                </div>
             </div>
         </div>
-        <h6 class="text-uppercase text-left pt-2">Results</h6>
-        <hr class="gp_orange">
-        <ngb-tabset type="pills" justify="justified">
-            <ngb-tab>
-                <ng-template ngbTabTitle>
-                    <mdb-icon size="3x" fas icon="table"></mdb-icon>
-                </ng-template>
-                <ng-template ngbTabContent class="px-2 py-2">
-                    <table mdbTable borderless="true">
-                        <thead>
-                            <tr class="text-center">
-                                <th scope="col"></th>
-                                <th scope="col" class="scenario-base">Scenario 1</th>
-                                <th scope="col" class="scenario-active">Scenario 2</th>
-                                <th scope="col" class="scenario-inactive">Scenario 3</th>
-                                <th scope="col" class="scenario-inactive">Scenario 4</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-title  results-table">
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">
-                                    <p>School proximity</p>
-                                    <small class="measure">km2</small>
-                                </th>
-                                <td class="text-center align-middle">0</td>
-                                <td class="text-center align-middle">10</td>
-                                <td class="text-center align-middle"></td>
-                                <td class="text-center align-middle"></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">
-                                    <p>Infill area</p>
-                                    <small class="measure">km2</small>
-                                </th>
-                                <td class="text-center align-middle">0</td>
-                                <td class="text-center align-middle">15</td>
-                                <td class="text-center align-middle"></td>
-                                <td class="text-center align-middle"></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">
-                                    <p>Population density</p>
-                                    <small class="measure">pop/km2</small>
-                                </th>
-                                <td class="text-center align-middle">900</td>
-                                <td class="text-center align-middle">2500</td>
-                                <td class="text-center align-middle"></td>
-                                <td class="text-center align-middle"></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">
-                                    <p>Infrastructure costs</p>
-                                    <small class="measure">Million USD</small>
-                                </th>
-                                <td class="text-center align-middle">100</td>
-                                <td class="text-center align-middle">80</td>
-                                <td class="text-center align-middle"></td>
-                                <td class="text-center align-middle"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab>
-                <ng-template ngbTabTitle>
-                    <mdb-icon size="3x" fas icon="chart-line"></mdb-icon>
-                </ng-template>
-                <ng-template ngbTabContent class="px-2 py-2">
-                    <h5 class="text-uppercase pl-2 pt-2 text-left results-title">chart</h5>
-                    <hr class="gp_orange pl-2">
-                    <p-chart type="radar" [data]="data" [options]="options"></p-chart>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab>
-                <ng-template ngbTabTitle>
-                    <mdb-icon size="3x" fas icon="divide"></mdb-icon>
-                </ng-template>
-                <ng-template ngbTabContent class="px-2 py-2">
-                    <div class="form-inline pl-2 pt-3 mb-2">
-                        <div class="form-group">
-                            <label for="base-scenario" class="mr-3">
-                <h6 class="table-title">Select base scenario</h6>
-              </label>
-                            <select name="base-scenario" id="base-scenario" class="form-control-sm">
-                <option value="">Scenario 1</option>
-                <option value="">Scenario 2</option>
-                <option value="">Scenario 3</option>
-                <option value="">Scenario 4</option>
-              </select>
+        <div aria-expanded="false" aria-controls="showUPResults" (click)="showUPResults.toggle(); showResults = !showResults">
+            <h6 class="text-uppercase text-left">results
+                <mdb-icon fas icon="angle-down" *ngIf="!showResults"></mdb-icon>
+                <mdb-icon fas icon="angle-up" *ngIf="showResults"></mdb-icon>
+            </h6>
+            <hr class="gp_orange">
+        </div>
+        <div class="" mdbCollapse #showUPResults="bs-collapse">
+            <ngb-tabset type="pills" justify="justified">
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <mdb-icon size="3x" fas icon="table"></mdb-icon>
+                    </ng-template>
+                    <ng-template ngbTabContent class="px-2 py-2">
+                        <table mdbTable borderless="true">
+                            <thead>
+                                <tr class="text-center">
+                                    <th scope="col"></th>
+                                    <th scope="col" class="scenario-base">Scenario 1</th>
+                                    <th scope="col" class="scenario-active">Scenario 2</th>
+                                    <th scope="col" class="scenario-inactive">Scenario 3</th>
+                                    <th scope="col" class="scenario-inactive">Scenario 4</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-title  results-table">
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">
+                                        <p>School proximity</p>
+                                        <small class="measure">km2</small>
+                                    </th>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">10</td>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="text-center align-middle"></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">
+                                        <p>Infill area</p>
+                                        <small class="measure">km2</small>
+                                    </th>
+                                    <td class="text-center align-middle">0</td>
+                                    <td class="text-center align-middle">15</td>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="text-center align-middle"></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">
+                                        <p>Population density</p>
+                                        <small class="measure">pop/km2</small>
+                                    </th>
+                                    <td class="text-center align-middle">900</td>
+                                    <td class="text-center align-middle">2500</td>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="text-center align-middle"></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">
+                                        <p>Infrastructure costs</p>
+                                        <small class="measure">Million USD</small>
+                                    </th>
+                                    <td class="text-center align-middle">100</td>
+                                    <td class="text-center align-middle">80</td>
+                                    <td class="text-center align-middle"></td>
+                                    <td class="text-center align-middle"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <mdb-icon size="3x" fas icon="chart-line"></mdb-icon>
+                    </ng-template>
+                    <ng-template ngbTabContent class="px-2 py-2">
+                        <h5 class="text-uppercase pl-2 pt-2 text-left results-title">chart</h5>
+                        <hr class="gp_orange pl-2">
+                        <p-chart type="radar" [data]="data" [options]="options"></p-chart>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <mdb-icon size="3x" fas icon="divide"></mdb-icon>
+                    </ng-template>
+                    <ng-template ngbTabContent class="px-2 py-2">
+                        <div class="form-inline pl-2 pt-3 mb-2">
+                            <div class="form-group">
+                                <label for="base-scenario" class="mr-3">
+                    <h6 class="table-title">Select base scenario</h6>
+                  </label>
+                                <select name="base-scenario" id="base-scenario" class="form-control-sm">
+                    <option value="">Scenario 1</option>
+                    <option value="">Scenario 2</option>
+                    <option value="">Scenario 3</option>
+                    <option value="">Scenario 4</option>
+                  </select>
+                            </div>
                         </div>
-                    </div>
-                    <table mdbTable borderless="true">
-                        <thead>
-                            <tr class="text-center">
-                                <th scope="col"></th>
-                                <th scope="col" class="scenario-active">Scenario 2</th>
-                                <th scope="col" class="scenario-inactive">Scenario 3</th>
-                                <th scope="col" class="scenario-inactive">Scenario 4</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-title  results-table">
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">School proximity</th>
-                                <td class="positive-result text-center">-20%</td>
-                                <td class="text-center"></td>
-                                <td></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">Infill area</th>
-                                <td class="text-center">40%</td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">Population density</th>
-                                <td class="text-center">10%</td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <th scope="row" class="text-left">Infrastructure cost</th>
-                                <td class="positive-result text-center">-20%</td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab>
-                <ng-template ngbTabTitle>
-                    <mdb-icon size="3x" fas icon="leaf"></mdb-icon>
-                </ng-template>
-                <ng-template ngbTabContent class="px-2 py-2">
-                    <h5 class="text-uppercase pt-2 pl-2 results-title text-left">sustainable development goals</h5>
-                    <hr class="gp_orange pl-2">
-                    <h6 class="table-title text-left pl-2">SDG 9 - Industry, innovation & infrastructure</h6>
-                    <table mdbTable class="results-text">
-                        <tbody>
-                            <tr mdbTableCol>
-                                <td>Proximity to roads</td>
-                                <td class="text-right "><span class="highlight-results ">48%</span> of population
-                                </td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <td>Proximity to WIFI hotspots</td>
-                                <td class="text-right "><span class="highlight-results ">58%</span> of population
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr class="gp_orange_large ">
-                    <h6 class="table-title text-left pl-2 ">SDG 11 - Sustainable cities & communities</h6>
-                    <table mdbTable class="results-text">
-                        <tbody>
-                            <tr mdbTableCol>
-                                <td>Proximity to roads</td>
-                                <td class="text-right "><span class="highlight-results ">48%</span> of population
-                                </td>
-                            </tr>
-                            <tr mdbTableCol>
-                                <td>Proximity to WIFI hotspots</td>
-                                <td class="text-right "><span class="highlight-results ">58%</span> of population
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </ng-template>
-            </ngb-tab>
-            <ngb-tab>
-                <ng-template ngbTabTitle>
-                    <mdb-icon size="3x " fas icon="question-circle "></mdb-icon>
-                </ng-template>
-                <ng-template ngbTabContent class="px-2 py-2 ">
-                    <h5 class="text-uppercase pl-2 pt-2 results-title text-left ">Help</h5>
-                    <hr class="gp_orange pl-2 ">
-                    <div class="results-text mx-3 my-3 pb-2 text-justify ">
-                        <p>To use this tool you must have uploaded the assumptions and criteria tables in your geoportal.</p>
-                        <p>If you have any further questions, please visit <a href="# ">urbanperformance.in</a>, where you will be able to see more information about the tool.</p>
-                    </div>
-                </ng-template>
-            </ngb-tab>
-        </ngb-tabset>
+                        <table mdbTable borderless="true">
+                            <thead>
+                                <tr class="text-center">
+                                    <th scope="col"></th>
+                                    <th scope="col" class="scenario-active">Scenario 2</th>
+                                    <th scope="col" class="scenario-inactive">Scenario 3</th>
+                                    <th scope="col" class="scenario-inactive">Scenario 4</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-title  results-table">
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">School proximity</th>
+                                    <td class="positive-result text-center">-20%</td>
+                                    <td class="text-center"></td>
+                                    <td></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">Infill area</th>
+                                    <td class="text-center">40%</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">Population density</th>
+                                    <td class="text-center">10%</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <th scope="row" class="text-left">Infrastructure cost</th>
+                                    <td class="positive-result text-center">-20%</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <mdb-icon size="3x" fas icon="leaf"></mdb-icon>
+                    </ng-template>
+                    <ng-template ngbTabContent class="px-2 py-2">
+                        <h5 class="text-uppercase pt-2 pl-2 results-title text-left">sustainable development goals</h5>
+                        <hr class="gp_orange pl-2">
+                        <h6 class="table-title text-left pl-2">SDG 9 - Industry, innovation & infrastructure</h6>
+                        <table mdbTable class="results-text">
+                            <tbody>
+                                <tr mdbTableCol>
+                                    <td>Proximity to roads</td>
+                                    <td class="text-right "><span class="highlight-results ">48%</span> of population
+                                    </td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <td>Proximity to WIFI hotspots</td>
+                                    <td class="text-right "><span class="highlight-results ">58%</span> of population
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr class="gp_orange_large ">
+                        <h6 class="table-title text-left pl-2 ">SDG 11 - Sustainable cities & communities</h6>
+                        <table mdbTable class="results-text">
+                            <tbody>
+                                <tr mdbTableCol>
+                                    <td>Proximity to roads</td>
+                                    <td class="text-right "><span class="highlight-results ">48%</span> of population
+                                    </td>
+                                </tr>
+                                <tr mdbTableCol>
+                                    <td>Proximity to WIFI hotspots</td>
+                                    <td class="text-right "><span class="highlight-results ">58%</span> of population
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>
+                        <mdb-icon size="3x " fas icon="question-circle "></mdb-icon>
+                    </ng-template>
+                    <ng-template ngbTabContent class="px-2 py-2 ">
+                        <h5 class="text-uppercase pl-2 pt-2 results-title text-left ">Help</h5>
+                        <hr class="gp_orange pl-2 ">
+                        <div class="results-text mx-3 my-3 pb-2 text-justify ">
+                            <p>To use this tool you must have uploaded the assumptions and criteria tables in your geoportal.</p>
+                            <p>If you have any further questions, please visit <a href="# ">urbanperformance.in</a>, where you will be able to see more information about the tool.</p>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
     </div>
     <p-footer>
 
     </p-footer>
 </p-dialog>
-<p-dialog header="Suitability" [(visible)]="displayST" [maximizable]="true">
+<p-dialog header="Suitability" [(visible)]="displayST" [maximizable]="true" [style]="{'max-height':'60em', 'max-width':'50em', 'width':'50em'}" [positionLeft]="766" [positionTop]="56">
     <div class="gp_modal" id="suitability">
         <div class="container-fluid">
             <ngb-tabset type="pills" justify="justified">
                 <ngb-tab>
                     <ng-template ngbTabTitle>
-                        <mdb-icon size="3x" fas icon="wrench"></mdb-icon>
+                        <mdb-icon size="2x" fas icon="wrench"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
                         <h6 class="pt-2 pl-2 text-uppercase">Settings</h6>
@@ -490,25 +512,24 @@
                 </ngb-tab>
                 <ngb-tab>
                     <ng-template ngbTabTitle>
-                        <mdb-icon size="3x" fas icon="edit"></mdb-icon>
+                        <mdb-icon size="2x" fas icon="edit"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
-                        <h6 class="pt-2 pl-2 text-uppercase">Edit</h6>
-                        <label for="" class="p-2">Subset by score:</label>
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">Edit</h6>
+                        <label for="" class="p-2 results-text">Subset by score:</label>
                         <div class="container-fluid pb-2">
                             <p-slider [(ngModel)]="rangeValues3" [range]="true" [min]="0" [max]="100" [step]="10"></p-slider>
                         </div>
-                        <h6 class="pt-2 pl-2 text-uppercase">Select Filters:</h6>
-                        <div class="custom-control custom-checkbox" *ngFor="let filter of filters">
-                            <!--<input type="checkbox" class="custom-control-input" />
-                            <label class="custom-control-label">{{filter}}</label>-->
-                            {{filter}}
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">Select Filters:</h6>
+                        <div class="custom-control custom-checkbox results-text ml-2" *ngFor="let filter of filters; index as i">
+                            <input type="checkbox" class="custom-control-input" id="filter-{{i}}" />
+                            <label class="custom-control-label" for="filter-{{i}}">{{filter}}</label>
                         </div>
                     </ng-template>
                 </ngb-tab>
                 <ngb-tab>
                     <ng-template ngbTabTitle>
-                        <mdb-icon size="3x" fas icon="chart-bar"></mdb-icon>
+                        <mdb-icon size="2x" fas icon="chart-bar"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
                         <div class="form-inline pl-2 pt-3 mb-2">
@@ -564,11 +585,11 @@
                 </ngb-tab>
                 <ngb-tab>
                     <ng-template ngbTabTitle>
-                        <mdb-icon size="3x" fas icon="leaf"></mdb-icon>
+                        <mdb-icon size="2x" fas icon="leaf"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
-                        <h6 class="pt-2 pl-2 text-uppercase">Sustainable development goals</h6>
-                        <div class="container p-3 text-justify">
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">Sustainable development goals</h6>
+                        <div class="results-text container p-3 text-justify">
                             <p>The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including those related to poverty, inequality, climate, environmental
                                 degradation, prosperity, and peace and justice. The Goals interconnect and in order to leave no one behind, it is important that we achieve each Goal and target by 2030. (United Nations, 2016)</p>
                             <hr class="gp_teal">
@@ -584,13 +605,21 @@
                 </ngb-tab>
                 <ngb-tab>
                     <ng-template ngbTabTitle>
-                        <mdb-icon size="3x " fas icon="info"></mdb-icon>
+                        <mdb-icon size="2x" fas icon="info"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2 ">
-                        <h6 class="pt-2 pl-2 text-uppercase">Sustainable development goals</h6>
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">About</h6>
                         <div class="results-text mx-3 my-3 pb-2 text-justify ">
-                            <p>To use this tool you must have uploaded the assumptions and criteria tables in your geoportal.</p>
-                            <p>If you have any further questions, please visit <a href="# ">urbanperformance.in</a>, where you will be able to see more information about the tool.</p>
+                            <p>The Suitability tool identifies optimal locations for a specific activity within a city. To simplify the decision-making process the tool maps multiple variables in one single index. To create such an index, users can select
+                                layers and create maps in minutes. Aditionally, they can define their own normalization rules, assign weights to each layer and filter the dataset to redefine their study area.</p>
+                            <hr class="gp_teal">
+                            <p>With the tool decision makers and practitioners can perform agile assessments in urban environments to map infrastructure gap hotspots, identify the optimal location for urban services and housing projects or to understand
+                                the overall distribution of a specific variable across the city.</p>
+                            <hr class="gp_teal">
+                        </div>
+                        <h6 class="pt-5 pl-2 text-uppercase">Code</h6>
+                        <div class="results-text mx-3 my-3 pb-2 text-justify ">
+                            <p>Suitability is an open source tool, designed as a web application. This implies that users do not need to install or download software. They can access the tool via web browser, in their preferred operating system.</p>
                         </div>
                     </ng-template>
                 </ngb-tab>
@@ -601,42 +630,51 @@
 
     </p-footer>
 </p-dialog>
-<p-sidebar [(visible)]="displayTools" [modal]="false" [dismissible]="false" position="right" [style]="{width: '10em'}">
+<p-sidebar [(visible)]="displayTools" [modal]="false" [dismissible]="false" position="right" [style]="{width: '5em'}">
     <ul class="btn-list list-unstyled">
         <li>
-            <button mdbBtn class="waves-light p-2 up-button" (click)="showUP()" type="button" mdbWavesEffect *ngIf="upAct">
-        <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
+            <button mdbBtn class="waves-light p-1 up-button" (click)="showUP()" type="button" mdbWavesEffect *ngIf="upAct">
+        <mdb-icon fas icon="wrench"></mdb-icon>
       </button>
-            <button mdbBtn class="waves-light p-2 st-button" (click)="showST()" type="button" mdbWavesEffect *ngIf="stAct">
-            <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
+            <button mdbBtn class="waves-light p-1 st-button" (click)="showST()" type="button" mdbWavesEffect *ngIf="stAct">
+            <mdb-icon fas icon="wrench"></mdb-icon>
           </button>
         </li>
         <hr style="color: #4B565F;background-color: #4B565F;" />
         <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAdd()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
-        <mdb-icon fas icon="plus" size="2x"></mdb-icon>
+            <small class="text-uppercase">Edit</small>
+        </li>
+        <li>
+            <button mdbBtn color="blue-grey" class="waves-light p-1" (click)="showAdd()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
+        <mdb-icon fas icon="plus"></mdb-icon>
       </button>
         </li>
         <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showEdit()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
-        <mdb-icon fas icon="draw-polygon" size="2x"></mdb-icon>
-      </button>
-        </li>
-        <hr style="color: #4B565F;background-color: #4B565F;" />
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAnalysis()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
-        <mdb-icon fas icon="globe" size="2x"></mdb-icon>
-      </button>
-        </li>
-        <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showSymbology()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
-        <mdb-icon fas icon="paint-brush" size="2x"></mdb-icon>
+            <button mdbBtn color="blue-grey" class="waves-light p-1" (click)="showEdit()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
+        <mdb-icon fas icon="draw-polygon"></mdb-icon>
       </button>
         </li>
         <hr style="color: #4B565F;background-color: #4B565F;" />
         <li>
-            <button mdbBtn color="blue-grey" class="waves-light p-2" (click)="showAbout()" type="button" mdbWavesEffect>
-        <mdb-icon fas icon="question-circle" size="2x"></mdb-icon>
+            <small class="text-uppercase">Symbology</small>
+        </li>
+        <li>
+            <button mdbBtn color="blue-grey" class="waves-light p-1" (click)="showAnalysis()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
+        <mdb-icon fas icon="globe"></mdb-icon>
+      </button>
+        </li>
+        <li>
+            <button mdbBtn color="blue-grey" class="waves-light p-1" (click)="showSymbology()" type="button" mdbWavesEffect [ngClass]="{'disabled' : upAct || stAct}">
+        <mdb-icon fas icon="paint-brush"></mdb-icon>
+      </button>
+        </li>
+        <hr style="color: #4B565F;background-color: #4B565F;" />
+        <li>
+            <small class="text-uppercase">Help</small>
+        </li>
+        <li>
+            <button mdbBtn color="blue-grey" class="waves-light p-1" (click)="showAbout()" type="button" mdbWavesEffect>
+        <mdb-icon fas icon="question-circle"></mdb-icon>
       </button>
         </li>
     </ul>

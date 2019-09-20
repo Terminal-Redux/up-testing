@@ -12,9 +12,6 @@ import * as json_data from '../../json-samples/scenario_results_all.json';
 
 export class ToolsSidebarComponent implements OnInit {
 
-  /*categoryColor1: any = '#ffffff';
-  categoryColor2: any = '#000000';
-  fontColor: string;*/
   i = 0;
   data: any;
   options: any;
@@ -36,15 +33,12 @@ export class ToolsSidebarComponent implements OnInit {
   rangeValues2: number[];
   rangeValues3: number[];
 
-  filters: ['District: Denpasar Barat', 'District: Denpasar Selatan', 'District: Denpasar Timur', 'District: Denpasar Utaral',
-            'Land Cover: Agricultural', 'Land Cover: Commercial', 'Land Cover: Open Space', 'Land Cover: Industrial',
-            'Land Cover: Slums', 'Land Cover: Residential 0-10', 'Land Cover: Residential 10-30', 'Land Cover: Residential 30-50',
-            'Land Cover: Residential 50-80', 'Land Cover: Residential 80-100', 'Land Cover: Residential no data',
-            'Disaster: Flooding Risk'];
-  /*scenarioId: number[];
-  scenarioName: string[];
-  scenarioInfo: object[];
-  scenResObj: object[];*/
+  filters: any[];
+
+  // Properties to change icons of collapsible UP steps
+  showCreate: boolean;
+  showManage: boolean;
+  showResults: boolean;
 
   @Input() upAct: boolean;
   @Input() stAct: boolean;
@@ -138,13 +132,21 @@ showST() {
               }
           }
       };
-        this.displayTools = false;
+        this.displayTools = true;
         this.colorCat1 = '#75B82C';
         this.colorCat2 = '#DECBD0';
         this.colorFont = '#000000';
         this.rangeValues1 = [0, 1000];
         this.rangeValues2 = [0, 1000];
         this.rangeValues3 = [0, 100];
+        this.filters = ['District: Denpasar Barat', 'District: Denpasar Selatan', 'District: Denpasar Timur', 'District: Denpasar Utaral',
+        'Land Cover: Agricultural', 'Land Cover: Commercial', 'Land Cover: Open Space', 'Land Cover: Industrial',
+        'Land Cover: Slums', 'Land Cover: Residential 0-10', 'Land Cover: Residential 10-30', 'Land Cover: Residential 30-50',
+        'Land Cover: Residential 50-80', 'Land Cover: Residential 80-100', 'Land Cover: Residential no data',
+        'Disaster: Flooding Risk'];
+        this.showCreate = false;
+        this.showManage = false;
+        this.showResults = false;
   }
 
   ngOnInit() {

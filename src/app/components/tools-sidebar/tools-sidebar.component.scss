@@ -146,3 +146,15 @@ small.measure {
 ::ng-deep #suitability .ui-slider .ui-slider-range {
     background-color: $geo-teal;
 }
+
+::ng-deep .ui-sidebar-right {
+    top: 56px !important;
+}
+
+::ng-deep .ui-widget {
+    font-family: $main-font !important;
+}
+
+small {
+    font-size: 60%;
+}
