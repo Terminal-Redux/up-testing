@@ -48,8 +48,12 @@
           <option></option>
         </select>
             </div>
-            <div class="form-row">
-                <img src="assets/img/geoportal-layers.PNG " class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} col-md-12 " alt=" ">
+            <div class="form-row text-center">
+                <img src="assets/img/39.png" class="p-1 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Points">
+                <img src="assets/img/40.png" class="p-1 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Density">
+                <img src="assets/img/41.png" class="p-1 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Word Cloud">
+                <img src="assets/img/42.png" class="p-1 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Pie Chart">
+                <img src="assets/img/43.png" class="p-1 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Statistics">
             </div>
             <hr>
             <div class="form-row">
@@ -189,7 +193,7 @@
 
     </div>
 </p-dialog>
-<p-dialog header="UrbanPerformance" appendTo="body" [(visible)]="displayUP" [maximizable]="true" [style]="{'max-height':'60em', 'max-width':'50em', 'width':'50em'}" [positionLeft]="766" [positionTop]="56">
+<p-dialog header="UrbanPerformance" appendTo="body" [(visible)]="displayUP" [maximizable]="true" [style]="{'width':'50em'}" [positionLeft]="766" [positionTop]="56">
     <div class="gp_modal container-fluid mb-2 py-2" id="urbanperformance">
         <div aria-expanded="false" aria-controls="showUPCreate" (click)="showUPCreate.toggle(); showCreate = !showCreate;">
             <h6 class="text-uppercase text-left">create scenario
@@ -435,7 +439,7 @@
 
     </p-footer>
 </p-dialog>
-<p-dialog header="Suitability" [(visible)]="displayST" [maximizable]="true" [style]="{'max-height':'60em', 'max-width':'50em', 'width':'50em'}" [positionLeft]="766" [positionTop]="56">
+<p-dialog header="Suitability" [(visible)]="displayST" [maximizable]="true" [style]="{'width':'50em'}" [positionLeft]="766" [positionTop]="56">
     <div class="gp_modal" id="suitability">
         <div class="container-fluid">
             <ngb-tabset type="pills" justify="justified">
@@ -532,55 +536,10 @@
                         <mdb-icon size="2x" fas icon="chart-bar"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
-                        <div class="form-inline pl-2 pt-3 mb-2">
-                            <div class="form-group">
-                                <label for="base-scenario" class="mr-3">
-                    <h6 class="table-title">Select base scenario</h6>
-                  </label>
-                                <select name="base-scenario" id="base-scenario" class="form-control-sm">
-                    <option value="">Scenario 1</option>
-                    <option value="">Scenario 2</option>
-                    <option value="">Scenario 3</option>
-                    <option value="">Scenario 4</option>
-                  </select>
-                            </div>
-                        </div>
-                        <table mdbTable borderless="true">
-                            <thead>
-                                <tr class="text-center">
-                                    <th scope="col"></th>
-                                    <th scope="col" class="scenario-active">Scenario 2</th>
-                                    <th scope="col" class="scenario-inactive">Scenario 3</th>
-                                    <th scope="col" class="scenario-inactive">Scenario 4</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-title  results-table">
-                                <tr mdbTableCol>
-                                    <th scope="row" class="text-left">School proximity</th>
-                                    <td class="positive-result text-center">-20%</td>
-                                    <td class="text-center"></td>
-                                    <td></td>
-                                </tr>
-                                <tr mdbTableCol>
-                                    <th scope="row" class="text-left">Infill area</th>
-                                    <td class="text-center">40%</td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center"></td>
-                                </tr>
-                                <tr mdbTableCol>
-                                    <th scope="row" class="text-left">Population density</th>
-                                    <td class="text-center">10%</td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center"></td>
-                                </tr>
-                                <tr mdbTableCol>
-                                    <th scope="row" class="text-left">Infrastructure cost</th>
-                                    <td class="positive-result text-center">-20%</td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">Summary</h6>
+                        <small class="pt-3 pl-2 text-uppercase results-text">Selected layer:</small>
+                        <ngx-donut-chart [data]="donutChartData" [title]="'Education: Schools'" [radius]="88" [thickness]="10" [margin]="100">
+                        </ngx-donut-chart>
                     </ng-template>
                 </ngb-tab>
                 <ngb-tab>

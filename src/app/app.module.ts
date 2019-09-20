@@ -14,7 +14,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayersSidebarComponent } from './components/layers-sidebar/layers-sidebar.component';
 import { MapComponent } from './modules/map/component/map.component';
 import { ToolsSidebarComponent } from './components/tools-sidebar/tools-sidebar.component';
-import { UpSettingsComponent } from './components/modals/up-settings/up-settings.component';
 
 import {ColorPickerModule} from 'primeng/colorpicker';
 import {ChartModule} from 'primeng/chart';
@@ -22,7 +21,8 @@ import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {DialogModule} from 'primeng/dialog';
 import {SliderModule} from 'primeng/slider';
-import { ExponentialPipe } from './custom-pipes/exponential.pipe';
+
+import { NgxDonutChartModule } from 'ngx-doughnut-chart';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,6 @@ import { ExponentialPipe } from './custom-pipes/exponential.pipe';
     LayersSidebarComponent,
     MapComponent,
     ToolsSidebarComponent,
-    UpSettingsComponent,
-    ExponentialPipe,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +43,8 @@ import { ExponentialPipe } from './custom-pipes/exponential.pipe';
     ButtonModule,
     SidebarModule,
     DialogModule,
-    SliderModule
+    SliderModule,
+    NgxDonutChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,28 +22,18 @@
                         <a class="nav-link waves-light text-muted" mdbWavesEffect>
                             <mdb-icon fas icon="database"></mdb-icon> My Data<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-light text-muted" mdbWavesEffect>
-                            <mdb-icon fas icon="university"></mdb-icon> Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-light text-dark" mdbWavesEffect>
-                            <mdb-icon fas icon="user-times"></mdb-icon> Logout</a>
-                    </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown" dropdown>
                         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
                             <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
                         <div class="dropdown-menu" role="menu">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><img src="assets/img/logo1.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="CollabMap">
+                                <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img src="assets/img/logo2.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
                                 </li>
-                                <li class="list-inline-item" (click)="stStatus()"><img src="assets/img/logo2.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
-                                </li>
+                                <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img src="assets/img/logo3.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
                             </ul>
                             <ul class="list-inline">
-                                <li class="list-inline-item" (click)="upStatus()"><img src="assets/img/logo3.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
-                                <li class="list-inline-item" (click)="closePlugin()"><img src="assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Close"></li>
+                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();"><img src="assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Close"></li>
                             </ul>
                         </div>
                     </li>
@@ -62,7 +52,7 @@
             <div class="col-md-12" id="map-container" style="z-index: -1;">
                 <app-map></app-map>
             </div>
-            <app-tools-sidebar [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-tools-sidebar>
+            <app-tools-sidebar #tools [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-tools-sidebar>
         </div>
     </div>
 </div>

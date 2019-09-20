@@ -12,11 +12,13 @@ import * as json_data from '../../json-samples/scenario_results_all.json';
 
 export class ToolsSidebarComponent implements OnInit {
 
-  i = 0;
+  // Data and options used for chart in UP
   data: any;
   options: any;
+
   displayTools: boolean;
 
+  // Properties to display Tools
   displayUP = false;
   displayST = false;
   displayAdd = false;
@@ -25,14 +27,17 @@ export class ToolsSidebarComponent implements OnInit {
   displaySymbology = false;
   displayAbout = false;
 
+  // Properties for PrimeNG ColorPickers
   colorCat1: string;
   colorCat2: string;
   colorFont: string;
 
+  // Properties for range sliders
   rangeValues1: number[];
   rangeValues2: number[];
   rangeValues3: number[];
 
+  // Data containing labels for filters in ST
   filters: any[];
 
   // Properties to change icons of collapsible UP steps
@@ -40,6 +45,10 @@ export class ToolsSidebarComponent implements OnInit {
   showManage: boolean;
   showResults: boolean;
 
+  // Data provided to the donut chart
+  donutChartData: any[];
+
+  // Properties to determine which plugin is active
   @Input() upAct: boolean;
   @Input() stAct: boolean;
 
@@ -69,6 +78,34 @@ showUP() {
 
 showST() {
     this.displayST = true;
+}
+
+hideAbout() {
+    this.displayAbout = false;
+}
+
+hideSymbology() {
+  this.displaySymbology = false;
+}
+
+hideAnalysis() {
+  this.displayAnalysis = false;
+}
+
+hideEdit() {
+  this.displayEdit = false;
+}
+
+hideAdd() {
+  this.displayAdd = false;
+}
+
+hideUP() {
+  this.displayUP = false;
+}
+
+hideST() {
+  this.displayST = false;
 }
 
 
@@ -132,6 +169,33 @@ showST() {
               }
           }
       };
+        this.donutChartData = [
+            {
+              label: 'Kindergarten',
+              value: 30,
+              color: 'white',
+            },
+            {
+              label: 'University',
+              value: 18,
+              color: 'grey',
+            },
+            {
+              label: 'Middle School',
+              value: 5,
+              color: 'green',
+            },
+            {
+                label: 'Elementary School',
+                value: 25,
+                color: 'red',
+              },
+              {
+                label: 'High School',
+                value: 22,
+                color: 'teal',
+              },
+          ];
         this.displayTools = true;
         this.colorCat1 = '#75B82C';
         this.colorCat2 = '#DECBD0';
