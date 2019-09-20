@@ -1,4 +1,4 @@
-<p-sidebar [(visible)]="displayLayers" [modal]="false" [dismissible]="false">
+<p-sidebar [(visible)]="displayLayers" [modal]="false" [dismissible]="false" [style]="{width: '16em'}">
     <form>
         <div class="form-group">
             <label class="text-uppercase" for="urban-city">Select a City</label>
@@ -18,7 +18,7 @@
                 <span class="input-group-text"><mdb-icon fas icon="search"></mdb-icon></span>
             </div>
         </div>
-        <div class="collapse-container">
+        <div class="collapse-container smaller-font">
             <div class="row mt-3" aria-expanded="false" aria-controls="collapse1" (click)="collapse1.toggle(); show=!show;" mdbWavesEffect>
                 <h6 class="col-md-10">
                     <mdb-icon fas icon="layer-group"></mdb-icon> General Data</h6>
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="collapse-container">
+        <div class="collapse-container smaller-font">
             <div class="row mt-2" aria-expanded="false" aria-controls="collapse2" (click)="collapse2.toggle(); show2=!show2;" mdbWavesEffect>
                 <h6 class="col-md-10">
                     <mdb-icon fas icon="layer-group"></mdb-icon> My Data</h6>
@@ -184,12 +184,12 @@
                 </div>
             </div>
         </div>
-        <div id="project-status" class="pl-4 pb-4">
+        <div id="project-status" class="pl-2 pb-4">
             <div class="row">
                 <div class="form-inline">
                     <button mdbBtn type="button" class="waves-light p-2" color="mdb-color" mdbWavesEffect><mdb-icon fas icon="save"></mdb-icon> save project</button>
                     <div class="form-group">
-                        <div class="custom-control custom-switch offset-md-10">
+                        <div class="custom-control custom-switch">
                             <input type="checkbox" class="custom-control-input" id="customSwitch6">
 
                             <label class="custom-control-label" for="customSwitch6">Edit</label>
@@ -208,4 +208,4 @@
         </div>
     </form>
 </p-sidebar>
-<p-button icon="pi pi-angle-right" (onClick)="displayLayers = true" styleClass="ui-button-secondary" style="position:absolute; top:0px; left:0px;"></p-button>
+<p-button icon="pi pi-angle-right" (onClick)="displayLayers = true" styleClass="ui-button-secondary" style="position:absolute; top:10px; left:0px;"></p-button>

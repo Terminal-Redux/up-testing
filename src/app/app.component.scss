@@ -107,6 +107,7 @@ input[type=radio]+.label-text:before {
 body,
 html {
     font-family: $main-font !important;
+    font-size: 12px !important;
     height: 99vh;
     overflow: hidden !important;
 }
@@ -307,4 +308,8 @@ input[type=radio]:disabled+.label-text:before {
 
 hr {
     border-bottom: #343E46
+}
+
+.dropdown-menu {
+    z-index: 1100;
 }
