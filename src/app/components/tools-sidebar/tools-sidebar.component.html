@@ -590,13 +590,13 @@
     </p-footer>
 </p-dialog>
 <p-sidebar [(visible)]="displayTools" [modal]="false" [dismissible]="false" position="right" [style]="{width: '5em'}">
-    <ul class="btn-list list-unstyled">
+    <ul class="btn-list list-unstyled pt-2">
         <li>
             <button mdbBtn class="waves-light p-1 up-button" (click)="showUP()" type="button" mdbWavesEffect *ngIf="upAct">
-        <mdb-icon fas icon="wrench"></mdb-icon>
+        <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
       </button>
             <button mdbBtn class="waves-light p-1 st-button" (click)="showST()" type="button" mdbWavesEffect *ngIf="stAct">
-            <mdb-icon fas icon="wrench"></mdb-icon>
+            <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
           </button>
         </li>
         <hr style="color: #4B565F;background-color: #4B565F;" />
