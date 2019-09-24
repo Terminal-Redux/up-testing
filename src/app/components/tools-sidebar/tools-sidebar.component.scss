@@ -155,6 +155,11 @@ small.measure {
     font-family: $main-font !important;
 }
 
+::ng-deep .btn.disabled,
+ ::ng-deep .btn:disabled {
+    opacity: 0.15;
+}
+
 small {
     font-size: 60%;
 }
