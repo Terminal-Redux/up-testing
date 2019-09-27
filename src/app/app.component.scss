@@ -1,4 +1,8 @@
 @import '../styles.scss';
+.navbar {
+    z-index: 10 !important;
+}
+
 .gp_orange {
     color: $geo-orange;
 }

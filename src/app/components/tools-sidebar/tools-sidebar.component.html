@@ -591,7 +591,7 @@
     </p-footer>
 </p-dialog>
 <p-sidebar [(visible)]="displayTools" [modal]="false" [dismissible]="false" position="right" [style]="{width: '5em'}">
-    <ul class="btn-list list-unstyled pt-2">
+    <ul class="btn-list list-unstyled pt-2" id="buttonList">
         <li>
             <button mdbBtn class="waves-light p-1 up-button" (click)="showUP()" type="button" mdbWavesEffect *ngIf="upAct">
         <mdb-icon fas icon="wrench" size="2x"></mdb-icon>
