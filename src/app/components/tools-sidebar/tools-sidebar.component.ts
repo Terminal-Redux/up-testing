@@ -1,14 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as json_data from '../../json-samples/scenario_results_all.json';
+import { NodeService } from 'src/app/services/node/NodeService';
+import {TreeNode} from 'primeng/api';
+
 
 @Component({
   selector: 'app-tools-sidebar',
   templateUrl: './tools-sidebar.component.html',
   styleUrls: ['./tools-sidebar.component.scss']
 })
-
-// const localData: object[] = json_data;
-// const localData: object[] = json_data;
 
 export class ToolsSidebarComponent implements OnInit {
 
@@ -47,6 +46,9 @@ export class ToolsSidebarComponent implements OnInit {
 
   // Data provided to the donut chart
   donutChartData: any[];
+
+  // Data provided by NodeService
+  files: TreeNode;
 
   // Properties to determine which plugin is active
   @Input() upAct: boolean;
@@ -109,7 +111,7 @@ hideST() {
 }
 
 
-    constructor() {
+    constructor(private nodeService: NodeService) {
         this.data = {
             labels: ['Indicator 1', 'Indicator 2', 'Indicator 3', 'Indicator 4', 'Indicator 5', 'Indicator 6',
              'Indicator 7', 'Indicator 8', 'Indicator 9', 'Indicator 10'
@@ -214,6 +216,7 @@ hideST() {
   }
 
   ngOnInit() {
+    this.nodeService.getFiles().then(files => this.files = files);
   }
 
 }

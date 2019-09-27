@@ -21,8 +21,13 @@ import {ButtonModule} from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {DialogModule} from 'primeng/dialog';
 import {SliderModule} from 'primeng/slider';
+import {TreeModule} from 'primeng/tree';
+import {TreeDragDropService} from 'primeng/api';
 
 import { NgxDonutChartModule } from 'ngx-doughnut-chart';
+import { MessageService } from './services/message/MessageService';
+import { NodeService } from './services/node/NodeService';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,9 +49,16 @@ import { NgxDonutChartModule } from 'ngx-doughnut-chart';
     SidebarModule,
     DialogModule,
     SliderModule,
-    NgxDonutChartModule
+    NgxDonutChartModule,
+    TreeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TreeDragDropService,
+    MessageService,
+    NodeService,
+    HttpClient
+  ],
   bootstrap: [AppComponent]
 })
 

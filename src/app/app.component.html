@@ -27,13 +27,15 @@
                         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
                             <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
                         <div class="dropdown-menu" role="menu">
-                            <ul class="list-inline">
+                            <ul class="list-inline p-1">
                                 <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img style="height: 1.8em" src="assets/img/st-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
                                 </li>
                                 <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img style="height: 1.8em" src="assets/img/up-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
                             </ul>
-                            <ul class="list-inline">
-                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();"><img style="height: 1.2em" src="assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Close"></li>
+                            <ul class="list-inline p-1">
+                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();">
+                                    <mdb-icon far icon="times-circle" size="2x"></mdb-icon>
+                                </li>
                             </ul>
                         </div>
                     </li>

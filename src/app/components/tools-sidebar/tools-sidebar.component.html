@@ -226,7 +226,7 @@
             <hr class="gp_orange">
         </div>
         <div class="" mdbCollapse #showUPManage="bs-collapse">
-            <div class="container-fluid p-2">
+            <!--<div class="container-fluid p-2">
                 <div class="row justify-content-center">
                     <button class="mx-1 waves-light" type="button" mdbBtn color="elegant" mdbWavesEffect>Scenario
               1</button>
@@ -242,7 +242,8 @@
               <mdb-icon fas icon="calculator"></mdb-icon> Calculate
             </button>
                 </div>
-            </div>
+            </div>-->
+            <p-tree [value]="files"></p-tree>
         </div>
         <div aria-expanded="false" aria-controls="showUPResults" (click)="showUPResults.toggle(); showResults = !showResults">
             <h6 class="text-uppercase text-left">results
@@ -519,7 +520,7 @@
                         <mdb-icon size="2x" fas icon="edit"></mdb-icon>
                     </ng-template>
                     <ng-template ngbTabContent class="px-2 py-2">
-                        <h6 class="pt-2 pl-2 text-uppercase results-text">Edit</h6>
+                        <h6 class="pt-2 pl-2 text-uppercase results-text">Filtering</h6>
                         <label for="" class="p-2 results-text">Subset by score:</label>
                         <div class="container-fluid pb-2">
                             <p-slider [(ngModel)]="rangeValues3" [range]="true" [min]="0" [max]="100" [step]="10"></p-slider>
