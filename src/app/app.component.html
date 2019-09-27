@@ -8,8 +8,8 @@
             <!-- Navbar brand -->
             <mdb-navbar-brand>
                 <a class="navbar-brand" href="#">Geoportal 
-                    <img style="height: 1.3em;" *ngIf="suitabilityActive && !urbPerActive" src="Oskari/dist/devapp/servlet/PLID/assets/img/st-small.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
-                    <img style="height: 1.3em;" *ngIf="urbPerActive && !suitabilityActive" src="Oskari/dist/devapp/servlet/PLID/assets/img/up-big.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
+                    <img style="height: 1.3em;" *ngIf="suitabilityActive && !urbPerActive" src="assets/img/st-small.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
+                    <img style="height: 1.3em;" *ngIf="urbPerActive && !suitabilityActive" src="assets/img/up-big.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
                 </a>
             </mdb-navbar-brand>
 
@@ -28,12 +28,12 @@
                             <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
                         <div class="dropdown-menu" role="menu">
                             <ul class="list-inline">
-                                <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img style="height: 1.8em" src="Oskari/dist/devapp/servlet/PLID/assets/img/st-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
+                                <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img style="height: 1.8em" src="assets/img/st-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
                                 </li>
-                                <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img style="height: 1.8em" src="Oskari/dist/devapp/servlet/PLID/assets/img/up-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
+                                <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img style="height: 1.8em" src="assets/img/up-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
                             </ul>
                             <ul class="list-inline">
-                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();"><img style="height: 1.2em" src="Oskari/dist/devapp/servlet/PLID/assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Close"></li>
+                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();"><img style="height: 1.2em" src="assets/img/logo4.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Close"></li>
                             </ul>
                         </div>
                     </li>
