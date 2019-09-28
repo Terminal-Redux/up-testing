@@ -8,7 +8,7 @@ export class NodeService {
     constructor(private http: HttpClient) {}
 
     getFiles() {
-        return this.http.get<any>('assets/data/files.json')
+        return this.http.get<any>('Oskari/dist/devapp/servlet/PLID/assets/data/files.json')
                     .toPromise()
                     .then(res => res.data as TreeNode);
     }

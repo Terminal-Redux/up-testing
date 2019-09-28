@@ -12,7 +12,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayersSidebarComponent } from './components/layers-sidebar/layers-sidebar.component';
-import { MapComponent } from './modules/map/component/map.component';
 import { ToolsSidebarComponent } from './components/tools-sidebar/tools-sidebar.component';
 
 import {ColorPickerModule} from 'primeng/colorpicker';
@@ -34,7 +33,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     LayersSidebarComponent,
-    MapComponent,
     ToolsSidebarComponent,
   ],
   imports: [

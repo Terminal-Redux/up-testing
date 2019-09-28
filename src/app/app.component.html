@@ -1,60 +1,57 @@
 <!-- Start your project here-->
-<div style="height: 100vh; width: 100vw; overflow:hidden;">
-    <!--<app-navbar></app-navbar>-->
-    <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white text-light" [containerInside]="false">
+<!--<app-navbar></app-navbar>-->
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white text-light change-index" [containerInside]="false">
 
-        <div class="container-fluid">
-            <!-- Navbar brand -->
-            <mdb-navbar-brand>
-                <a class="navbar-brand" href="#">Geoportal 
-                    <img style="height: 1.3em;" *ngIf="suitabilityActive && !urbPerActive" src="assets/img/st-small.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
-                    <img style="height: 1.3em;" *ngIf="urbPerActive && !suitabilityActive" src="assets/img/up-big.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <mdb-navbar-brand>
+            <a class="navbar-brand" href="#">Geoportal 
+                    <img style="height: 1.3em;" *ngIf="suitabilityActive && !urbPerActive" src="Oskari/dist/devapp/servlet/PLID/assets/img/st-small.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
+                    <img style="height: 1.3em;" *ngIf="urbPerActive && !suitabilityActive" src="Oskari/dist/devapp/servlet/PLID/assets/img/up-big.png" class="pl-4 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance logo">
                 </a>
-            </mdb-navbar-brand>
+        </mdb-navbar-brand>
 
-            <!-- Collapsible content -->
-            <links>
+        <!-- Collapsible content -->
+        <links>
 
-                <!-- Links -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link waves-light text-muted" mdbWavesEffect>
-                            <mdb-icon fas icon="database"></mdb-icon> My Data<span class="sr-only">(current)</span></a>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                            <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
-                        <div class="dropdown-menu" role="menu">
-                            <ul class="list-inline p-1">
-                                <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img style="height: 1.8em" src="assets/img/st-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
-                                </li>
-                                <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img style="height: 1.8em" src="assets/img/up-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
-                            </ul>
-                            <ul class="list-inline p-1">
-                                <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();">
-                                    <mdb-icon far icon="times-circle" size="2x"></mdb-icon>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link waves-light text-muted" mdbWavesEffect>
+                        <mdb-icon fas icon="database"></mdb-icon> My Data<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                        <mdb-icon fas icon="tools"></mdb-icon> Tools<span class="caret"></span></a>
+                    <div class="dropdown-menu" role="menu">
+                        <ul class="list-inline p-1">
+                            <li class="list-inline-item" (click)="stStatus(); tools.showST(); tools.hideUP();"><img style="height: 1.8em" src="Oskari/dist/devapp/servlet/PLID/assets/img/st-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="Suitability">
+                            </li>
+                            <li class="list-inline-item" (click)="upStatus(); tools.showUP(); tools.hideST();"><img style="height: 1.8em" src="Oskari/dist/devapp/servlet/PLID/assets/img/up-small.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="UrbanPerformance"></li>
+                        </ul>
+                        <ul class="list-inline p-1">
+                            <li class="list-inline-item" (click)="closePlugin(); tools.hideUP(); tools.hideST();">
+                                <mdb-icon far icon="times-circle" size="2x"></mdb-icon>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-                </ul>
-                <!-- Links -->
-            </links>
-            <!-- Collapsible content -->
+            </ul>
+            <!-- Links -->
+        </links>
+        <!-- Collapsible content -->
 
+    </div>
+</mdb-navbar>
+<!--/.Navbar-->
+<div class="container-fluid" id="div" style="width: 100vw; position: relative;">
+    <div class="row">
+        <app-layers-sidebar [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-layers-sidebar>
+        <div class="col-md-12" id="map-container" style="z-index: -1;">
         </div>
-    </mdb-navbar>
-    <!--/.Navbar-->
-    <div class="container-fluid" id="div" style="width: 100vw; position: relative;">
-        <div class="row">
-            <app-layers-sidebar [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-layers-sidebar>
-            <div class="col-md-12" id="map-container" style="z-index: -1;">
-                <app-map></app-map>
-            </div>
-            <app-tools-sidebar #tools [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-tools-sidebar>
-        </div>
+        <app-tools-sidebar #tools [upAct]="urbPerActive" [stAct]="suitabilityActive"></app-tools-sidebar>
     </div>
 </div>
